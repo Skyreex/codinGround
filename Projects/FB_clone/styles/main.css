@@ -1,0 +1,128 @@
+:root {
+  --main-color: #1877f2;
+  --bg-color: #f0f2f5;
+}
+html {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 65vw;
+  height: 720px;
+  text-align: center;
+}
+
+.lang {
+  background-color: white;
+}
+
+header h1 {
+  color: var(--main-color);
+  margin: 30px 0 0 0;
+  font-size: 58px;
+  font-weight: 780;
+}
+header p {
+  font-size: x-large;
+}
+
+form {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  height: 330px;
+  margin-top: 30px;
+  padding: 12px;
+}
+
+form table {
+  width: 100%;
+}
+
+form input {
+  width: 95%;
+  margin: 0 0 10px 0;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px rgb(218, 218, 218) solid;
+  padding-left: 18px;
+  font-size: 17px;
+}
+
+input:focus {
+  outline: 1px solid var(--main-color);
+  box-shadow: 0px 0px 3px var(--main-color);
+}
+
+.login {
+  background-color: var(--main-color);
+  color: white;
+  font-size: larger;
+  height: 50px;
+  font-weight: 600;
+  margin: 0 0 0 2px;
+  padding: 0;
+  width: 100%;
+}
+
+.login:hover {
+  background-color: #146ee3;
+  cursor: pointer;
+}
+
+.frgtpass {
+  text-decoration: none;
+  font-size: 14px;
+  height: 35px;
+  color: #146ee3;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+.signup {
+  height: 50px;
+  width: 200px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #42b72a;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.signup:hover {
+  background-color: #3dac27;
+}
+
+.p2 {
+  margin-top: 30px;
+  font-size: small;
+}
+
+.signup2 {
+  color: black;
+  text-decoration: none;
+}
+
+input::placeholder {
+  opacity: 0.8;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link type="image/ico" rel="icon" href="images/favicon.ico" />
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+
+      header img {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: -200;
+      }
+
+      h1 {
+        text-align: center;
+        top: 30px;
+      }
+
+      table {
+        background: rgba(0, 0, 0, 0.15);
+        color: white;
+        border: 5px solid rgb(85, 85, 179);
+        border-radius: 10px;
+        padding: 13px;
+        margin: 100px auto;
+        border-spacing: 10px;
+      }
+
+      label#login {
+        margin-top: 0px;
+        font-size: 30px;
+      }
+
+      td {
+        padding: 6px;
+      }
+
+      #name input {
+        width: 135px;
+      }
+
+      .wdth {
+        width: 90%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/lambda.jpg" alt="BG" />
+    </header>
+    <table>
+      <form action="post">
+        <tr>
+          <td colspan="4" align="center" height="100px" width="100%">
+            <label id="login">SIGN UP</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fname">First name : </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="wdth"
+              id="fname"
+              required
+              placeholder="First name"
+              name="fname"
+            />
+          </td>
+
+          <td width="20%">
+            <label for="lname">Last name : </label>
+          </td>
+          <td width="30%">
+            <input
+              type="text"
+              class="wdth"
+              required
+              id="lname"
+              placeholder="Last name"
+              name="lname"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="user">Username : </label>
+          </td>
+          <td>
+            <input
+              type="text"
+              class="wdth"
+              required
+              id="user"
+              placeholder="Username"
+              name="username"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email : </label>
+          </td>
+          <td>
+            <input
+              type="email"
+              class="wdth"
+              required
+              id="email"
+              placeholder="Email"
+              name="email"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass">Password : </label>
+          </td>
+          <td>
+            <input
+              type="password"
+              class="wdth"
+              required
+              id="pass"
+              placeholder="Password"
+              name="pass"
+              minlength="6"
+              maxlength="15"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Genres : </label>
+          </td>
+          <td>
+            <label for="M">M</label>
+            <input type="radio" required id="M" name="male" checked />
+            <label for="F">F</label>
+            <input type="radio" required id="F" name="male" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="country">Country</label>
+          </td>
+          <td>
+            <select name="Country" class="wdth" id="country" required>
+              <optgroup label="EUROPE">
+                <option value="FR">France</option>
+                <option value="DE">Germany</option>
+                <option value="PO">Poland</option>
+                <option value="ES">Spain</option>
+                <option value="IT">Italy</option>
+              </optgroup>
+              <optgroup label="AFRICA">
+                <option value="MA" selected>Morocco</option>
+                <option value="EG">Egypt</option>
+                <option value="AL">Algeria</option>
+                <option value="TN">Tunisia</option>
+                <option value="SA">South Africa</option>
+              </optgroup>
+              <optgroup label="NORTH AMERICA">
+                <option value="CA">Canada</option>
+                <option value="ME">Mexico</option>
+                <option value="GR">Greenland</option>
+                <option value="US">United States</option>
+              </optgroup>
+              <optgroup label="SOUTH AMERICA">
+                <option value="BR">Brazil</option>
+                <option value="AG">Argentina</option>
+                <option value="CO">Columbia</option>
+                <option value="PE">Peru</option>
+              </optgroup>
+              <optgroup label="AUSTRALIA">
+                <option value="SA">South australia</option>
+                <option value="AG">North australia</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="bdate">Birthdate : </label>
+          </td>
+          <td>
+            <input
+              type="date"
+              class="wdth"
+              required
+              id="bdate"
+              value="1969-06-06"
+              name="bdate"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>ID / Passport (optional) : </label>
+          </td>
+          <td>
+            <input type="file" required id="id" name="Id" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" align="center">
+            <input id="button" type="submit" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input id="button" type="reset" />
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

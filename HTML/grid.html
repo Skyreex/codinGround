@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      .d1 {
+        background-color: blue;
+      }
+      .d2 {
+        background-color: red;
+      }
+      .d3 {
+        background-color: orangered;
+      }
+      .d4 {
+        background-color: teal;
+      }
+      .d5 {
+        background-color: greenyellow;
+      }
+
+      .container {
+        font-size: 3rem;
+        width: 100%;
+        background-color: aquamarine;
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 70px 50px 50px; */
+        grid-template-columns: auto 50px 10% 2fr 1fr;
+        grid-template-rows: 50px 50px;
+      }
+
+      .container1 {
+        font-size: 3rem;
+        width: 100%;
+        background-color: lightgrey;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        /* grid-row-gap: 10px;
+        grid-column-gap: 10px; */
+        grid-gap: 10px;
+      }
+
+      .container2 {
+        font-size: 3rem;
+        min-width: 300px;
+        width: 100%;
+        background-color: rgb(182, 166, 102);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      .container3 {
+        font-size: 3rem;
+        min-width: 300px;
+        width: 100%;
+        background-color: rgb(222, 147, 243);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: auto;
+      }
+
+      .c5 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 4;
+      }
+
+      .f2 {
+        justify-self: center;
+      }
+
+      .f3 {
+        align-self: auto;
+      }
+
+      .container4 {
+        font-size: 3rem;
+        width: 100%;
+        background-color: rgb(149, 248, 195);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+          "header header header header"
+          "Radvert0 content0 content0 Ladvert0"
+          "Radvert1 content1 content1 Ladvert1"
+          "footer footer footer footer";
+      }
+
+      .s1 {
+        grid-area: header;
+      }
+      .s2 {
+        grid-area: Radvert0;
+      }
+      .s3 {
+        grid-area: content0;
+      }
+      .s4 {
+        grid-area: Ladvert0;
+      }
+      .s5 {
+        grid-area: Radvert1;
+      }
+      .s6 {
+        grid-area: content1;
+      }
+      .s7 {
+        grid-area: Ladvert1;
+      }
+      .s8 {
+        grid-area: footer;
+      }
+
+      .container5 {
+        font-size: 3rem;
+        width: 100%;
+        background-color: rgb(202, 248, 116);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 10px;
+      }
+
+      .x1 {
+        grid-area: 1/1/2/5;
+      }
+      .x2 {
+        grid-area: 2/1/3/2;
+      }
+      .x3 {
+        grid-area: 2/2/3/4;
+      }
+      .x4 {
+        grid-area: 2/4/3/5;
+      }
+      .x5 {
+        grid-area: 3/1/4/2;
+      }
+      .x6 {
+        grid-area: 3/2/4/4;
+      }
+      .x7 {
+        grid-area: 3/4/4/5;
+      }
+      .x8 {
+        grid-area: 4/1/5/5;
+      }
+
+      .container6 {
+        font-size: 3rem;
+        width: 100%;
+        background-color: rgb(91, 122, 96);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-rows: repeat(auto-fill, 1fr);
+        grid-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+    <div class="container1">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+    <div class="container2">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3 c3">3</div>
+      <div class="d4">4</div>
+      <div class="d5 c5">5</div>
+    </div>
+    <div class="container3">
+      <div class="d1">1</div>
+      <div class="d2 f2">2</div>
+      <div class="d3 f3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+    <div class="container4">
+      <div class="d1 s1">1</div>
+      <div class="d2 s2">2</div>
+      <div class="d3 s3">3</div>
+      <div class="d4 s4">4</div>
+      <div class="d2 s5">5</div>
+      <div class="d3 s6">6</div>
+      <div class="d4 s7">7</div>
+      <div class="d1 s8">8</div>
+    </div>
+    <div class="container5">
+      <div class="d1 x1">1</div>
+      <div class="d2 x2">2</div>
+      <div class="d3 x3">3</div>
+      <div class="d4 x4">4</div>
+      <div class="d2 x5">5</div>
+      <div class="d3 x6">6</div>
+      <div class="d4 x7">7</div>
+      <div class="d1 x8">8</div>
+    </div>
+    <div class="container6">
+      <div class="d1">1</div>
+      <div class="d2">2</div>
+      <div class="d3">3</div>
+      <div class="d4">4</div>
+      <div class="d5">5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input#az {
+        all: unset;
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid rgb(219, 219, 219);
+      }
+      input {
+        margin-top: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <input
+        id="az"
+        type="text"
+        placeholder="Phone number, usernane, or email"
+      />
+      <input
+        id="az"
+        type="password"
+        placeholder="Password"
+        autocomplete="new-password"
+      />
+      <input type="password" autocomplete="current-password" />
+      <!--to tell
+      browsers to offer the option to fill in previously saved passwords for
+      this website. -->
+
+      <!-- <input
+        placeholder="Phone number"
+        type="tel"
+        id="phone"
+        name="phone"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+        optional
+      /> -->
+      <input type="submit" />
+    </form>
+  </body>
+</html>

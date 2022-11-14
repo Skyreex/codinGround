@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --color1: green; /* this var is generalized */
+      }
+      .h22 {
+        color: var(--color2); /* this var can be used just in h22 class */
+        --color2: blue;
+      }
+      .h222 {
+        color: var(--color1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h22">
+      <h2>RER</h2>
+    </div>
+    <div class="h222">
+      <h2>VEV</h2>
+    </div>
+  </body>
+</html>

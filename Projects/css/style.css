@@ -1,0 +1,289 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+  .aa{
+    width: 200px;
+    height: 50px;
+    background-color: #505061;
+    border-radius: 30px;
+    position: absolute;
+    top: 50;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 255, 0);
+    padding: 4px;
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(106, 106, 106, 0.653);
+} 
+
+.aa:hover{
+  box-shadow: 0 0 20px 3px #00ff00;
+}
+
+
+
+    .aa div{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #2f2e2c;
+      border-radius: 56%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      transition: all 1s;
+      z-index: 1;
+    }
+
+
+.aa:hover div{
+  margin-left: calc(100% - 58px);
+  background-color: #00ff00;
+  color:#27272a;
+}
+
+.aa p {
+  position: absolute;
+  left: 35%;
+  color: rgb(46, 46, 46);
+  font-size: 20px;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.aa:hover p{
+  position: absolute;
+  left: 15%;
+  color: rgb(0, 255, 0);
+}
+
+
+
+/* ------- */
+
+
+
+  .aa1{
+    width: 50px;
+    height: 50px;
+    background-color: #505061;
+    border-radius: 30px;
+    position: absolute;
+    top: 150;
+    left: 43%;
+    display: flex;
+    align-items: center;
+    /* color: rgb(0, 255, 0);  */
+    padding: 4px;
+    transition: all 1s;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 rgba(106, 106, 106, 0.668);
+    overflow: hidden;
+} 
+
+.aa1:hover{
+  width: 200px;
+  box-shadow: 0 0 20px 3px #00ff00;
+ 
+
+}
+
+
+
+    .aa1 div{
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: #2f2e2c;
+      border-radius: 56%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      transition: all 1s;
+      z-index: 1;
+      color: #11ff00;
+    }
+
+
+.aa1:hover div{
+  /* margin-left: calc(100% - 58px); */
+  background-color: #00ff00;
+  color:#27272a;
+}
+
+.aa1 p {
+  width: 200px;
+  position: absolute;
+  left: 35%;
+  color: rgba(46, 46, 46, 0);
+  font-size: 20px;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.aa1:hover p{
+  /* position: absolute;
+  left: 15%; */
+  color: rgb(0, 255, 0);
+}
+
+
+/* ====================== */
+
+
+.aa0{
+  width: 50px;
+  height: 50px;
+  background-color: #505061;
+  border-radius: 30px;
+  position: absolute;
+  top: 250;
+  left: 43%;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  transition: all 1s;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(106, 106, 106, 0.668);
+  overflow: hidden;
+} 
+
+.aa0:hover{
+width: 200px;
+box-shadow: 0 0 20px 3px #00ff00;
+}
+
+  .aa0 div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #2f2e2c;
+    border-radius: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 1s;
+    z-index: 1;
+    color: #11ff00;
+  }
+
+
+.aa0:hover div{
+margin-left: calc(100% - 58px);
+background-color: #00ff00;
+color:#27272a;
+}
+
+.aa0 p {
+width: 200px;
+position: absolute;
+left: -120px;
+color: rgb(159, 159, 159);
+font-size: 20px;
+transition: all 1s;
+z-index: 0;
+}
+
+.aa0:hover p{
+position: absolute;
+left: 15%;
+color: rgb(0, 255, 0);
+}
+
+
+
+
+
+/* -------------------------- */
+
+
+
+.aa2{
+  width: 200px;
+  height: 50px;
+  background-color: #505061;
+  border-radius: 30px;
+  position: absolute;
+  top: 350;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 255, 0);
+  padding: 4px;
+  transition: all 1s;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(106, 106, 106, 0.653);
+  overflow: hidden;
+} 
+
+.aa2:hover{
+box-shadow: 0 0 20px 3px #00ff00;
+}
+
+
+
+  .aa2 div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #2f2e2c;
+    border-radius: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 1s;
+    z-index: 1;
+  }
+
+
+.icon1{
+    position: absolute;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #2f2e2c;
+    border-radius: 56%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 1s;
+    z-index: 1;
+  }
+
+.aa2:hover div{
+margin-left: -54px;
+background-color: #00ff00;
+color:#27272a;
+}
+
+.aa2 p {
+position: absolute;
+left: 35%;
+color: rgb(46, 46, 46);
+font-size: 20px;
+transition: all 1s;
+z-index: 0;
+}
+
+.aa2:hover p{
+position: absolute;
+left: 15%;
+color: rgb(0, 255, 0);
+}
+
+
+

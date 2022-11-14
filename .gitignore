@@ -1,0 +1,5 @@
+.vscode/
+PYTHON/.idea/
+PYTHON/__pycache__/
+PYTHON/venv/
+Algorithm/EX/

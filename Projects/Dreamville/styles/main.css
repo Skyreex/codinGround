@@ -1,0 +1,91 @@
+/*
+10/15/2022
+*/
+
+
+header
+{
+	background-color: #000000;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    float: none;
+    top: 0;
+    left: 0;
+    z-index: 200000;
+}
+
+nav img 
+{
+    margin: 9px 0 0 100px;
+}
+
+nav ul  
+{
+    list-style-type: none;
+    text-align: right;
+    margin-top: -56px;
+    margin-right: 10px;
+    
+}
+
+nav ul li
+{
+	display: inline-block;
+    margin-right: 55px; 
+	font-family: 'Oswald', sans-serif;
+    font-size: large;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.home
+{
+    border-radius: 17px;
+    border: solid 2px white;
+    padding-block: 17px;
+    padding-inline: 20px;
+}
+
+li a:link,li a:visited {color: #ffffff ;}
+li a:hover {color: #00B7C2 ;}
+li a:active {color: #028d94 ;}
+
+li .home:hover 
+{ 
+    background-color: white ;
+    border: solid 2px white;
+    color: #00B7C2;
+}
+
+li .home:active 
+{ 
+    background-color: #e5e5e5 ;
+    color: #028d94;
+    border: solid 1px #028d94;
+}
+
+/* --------------------------------------------------------- */
+
+main .Background img 
+{
+    height: 500px;
+    position: fixed;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    z-index: -1;
+}
+
+main h1 
+{
+    font-size: -WEBKIT-XXX-LARGE;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 335px;
+    text-align: center;
+    z-index: 1000;
+}

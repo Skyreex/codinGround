@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+      }
+      .red {
+        background-color: red;
+        width: 50%;
+        height: 100%;
+        border-right: 1px solid white;
+      }
+      .blue {
+        background-color: blue;
+        border-right: 1px solid white;
+        width: 50%;
+        height: 100%;
+      }
+      .red:hover {
+        background-color: blue;
+        opacity: 0.8;
+      }
+      .blue:hover {
+        background-color: red;
+        opacity: 0.8;
+      }
+
+      #container1 {
+        background-color: grey;
+        margin-top: 10px;
+        height: 500px;
+        display: flex;
+      }
+
+      .item1 {
+        background-color: aqua;
+        height: 70%;
+        /* width: 100%;
+        flex-shrink: 2; */
+        flex-grow: 1;
+        order: 3;
+      }
+      .item2 {
+        background-color: blueviolet;
+        height: 70%;
+        /* width: 100%;
+        flex-shrink: 1; */
+        flex-grow: 2;
+        order: 2;
+      }
+      .item3 {
+        background-color: darkgoldenrod;
+        height: 70%;
+        /* flex-shrink: 2;
+        width: 100%; */
+        flex-grow: 1;
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="red"></div>
+      <div class="blue"></div>
+    </div>
+    <div id="container1">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+    </div>
+  </body>
+</html>

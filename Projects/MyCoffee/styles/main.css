@@ -1,0 +1,166 @@
+/* @import url(reset.css); */
+
+body {
+  background-color: #f3dac3;
+  --bgcolor: #3f2108;
+  --bgcolor2: #ce9b6a;
+}
+
+.title {
+  color: #ffffff;
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  font-family: "Poor Story", cursive;
+}
+
+nav {
+  background-color: var(--bgcolor);
+  top: 0px;
+  left: 0px;
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  z-index: 33;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+  padding-right: 10px;
+  position: absolute;
+  right: 5px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 34px;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  font-weight: bold;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mainimg {
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  top: 55px;
+  z-index: -1;
+  width: 100%;
+  height: 320px;
+}
+
+.ttl {
+  z-index: 1;
+  position: relative;
+  top: 300px;
+  left: 44vw;
+  width: 103px;
+  padding: 11px;
+  border: 5px double var(--bgcolor2);
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  font-family: "Poor Story", cursive;
+}
+
+.ttl:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 5px double var(--bgcolor);
+  border-radius: 15px;
+  color: var(--bgcolor2);
+}
+
+#content1 {
+  position: relative;
+  top: 333px;
+  left: 15px;
+  width: 45%;
+  border: 2px solid var(--bgcolor);
+  border-radius: 20px;
+}
+
+#content2 {
+  position: relative;
+  top: 65px;
+  left: 662px;
+  width: 45%;
+  border: 2px solid var(--bgcolor);
+  border-radius: 20px;
+}
+
+.content-img {
+  width: 20vw;
+  object-fit: cover;
+  float: left;
+  margin-right: 20px;
+  height: 264px;
+  border-radius: 17px 0 0 17px;
+}
+
+.content-h {
+  color: var(--bgcolor);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 2;
+  text-decoration: 10px underline;
+}
+
+.content-p {
+  font: 1em sans-serif;
+}
+
+#content0 {
+  position: absolute;
+  top: 367px;
+}
+
+#team {
+  position: absolute;
+  top: 987px;
+  left: 30px;
+}
+
+#team h1 {
+  position: relative;
+  top: -14px;
+  left: 460px;
+  color: var(--bgcolor);
+}
+
+.person {
+  position: absolute;
+  width: 256px;
+  text-align: center;
+  border: 4px double var(--bgcolor);
+  border-radius: 20px;
+}
+
+.person-img {
+  width: 20vw;
+  object-fit: cover;
+  margin-right: 20px;
+  height: 264px;
+  border-radius: 17px 17px 0 0;
+  object-position: 0 -6px;
+}
+
+.person1 {
+  left: 12px;
+}
+
+.person2 {
+  left: 314px;
+}
+
+.person3 {
+  left: 616px;
+}
+
+.person4 {
+  left: 918px;
+}

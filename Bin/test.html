@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      img {
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+        float: left;
+        margin-right: 30px;
+      }
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        background-image: url("../DATA/lambda.jpg");
+        background-repeat: no-repeat;
+        background-size: unset;
+      }
+      button,
+      input.but {
+        all: unset;
+        border: 1px solid;
+        background-color: seagreen;
+        color: aliceblue;
+        width: 90px;
+        height: 25px;
+        display: center;
+        text-align: center;
+        margin-top: 1rem;
+      }
+      a {
+        text-decoration: none;
+      }
+      input:invalid {
+        border: 2px solid red;
+        border-radius: 10px;
+        padding: 5px;
+      }
+
+      input:valid {
+        border: 2px solid rgb(10, 208, 26);
+        border-radius: 10px;
+        padding: 5px;
+        margin-right: 1rem;
+      }
+
+      fieldset {
+        border: 2px solid black;
+        border-radius: 15px;
+        width: 10px;
+      }
+      fieldset#dd {
+        width: 160px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../DATA/kajetan-sumila-1s9_1gXW2dY-unsplash.jpg" />
+    <form action="post">
+      <a href="https://www.google.com" target="_blank">
+        <button type="button">GOOGLE</button>
+      </a>
+      &nbsp;&nbsp;
+      <br />
+      <br />
+      <fieldset>
+        <legend>username</legend>
+        <input
+          type="text"
+          placeholder="Username"
+          style="padding: 5px"
+          autocomplete="username"
+        />
+      </fieldset>
+      <br />
+      <br />
+      <input type="password" minlength="4" />
+      <br /><br />
+      <fieldset>
+        <legend>Select a file :</legend>
+        <input type="file" id="myfile" name="myfile" />
+      </fieldset>
+      <br />
+      <fieldset id="dd">
+        <legend>language</legend>
+        <label for="html">HTML</label>
+        <input type="radio" name="webfeature" value="html" id="html" />
+        <label for="css">CSS</label>
+        <input type="radio" name="webfeature" value="css" id="css" />
+      </fieldset>
+      <input
+        type="button"
+        class="but"
+        value="Click here"
+        onclick="alert('hello world!')"
+      />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

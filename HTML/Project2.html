@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      #mainNav {
+        position: fixed;
+        width: 100%;
+        z-index: 1999;
+        transition: 0.4s;
+        backdrop-filter: blur(17px);
+        box-shadow: 0px 0px 20px 0px #0002;
+      }
+
+      #mainNav .container {
+        margin-top: 31px;
+        height: 7vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+      }
+
+      #mainNav .container .logo {
+        width: 65px;
+      }
+
+      #mainNav .container #menu {
+        display: flex;
+        gap: 30px;
+      }
+
+      #mainNav .container #menu span {
+        font-size: 1.3rem;
+        font-weight: 600;
+        transition: 0.2s;
+        opacity: 0.3;
+        transform: scale(0.9);
+        cursor: pointer;
+      }
+
+      #mainNav .container #menu span:hover,
+      #mainNav .container #menu .active {
+        opacity: 1;
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="mainNav">
+      <div class="container">
+        <a href="#"><img class="logo" src="../DATA/Dreamville.png" /></a>
+        <div id="menu">
+          <span>HOME</span>
+          <span>ABOUT</span>
+          <span>SUPPORT</span>
+          <span>CONTACT US</span>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
