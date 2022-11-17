@@ -35,7 +35,6 @@ print(b)
 print(c)
 print(d)
 
-
 # escape new line
 
 print("Wsp \
