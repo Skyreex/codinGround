@@ -7,17 +7,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
-
+html {
+  background-color: #e6e5e5;
+}
 /*                  VAR                   */
 :root {
-  --theme-color: #8f1e12;
+  --font: "Teko", sans-serif;
+  --theme-color: #192033;
+  --black: rgba(0, 0, 0, 0.3);
+  --stroke-white: -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255),
+    -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255);
+  --shadow-black: -1px 1px 5px var(--black), 1px 1px 5px var(--black),
+    -1px -1px 5px var(--black), 1px -1px 5px var(--black);
 }
 
 /*                  NAV                 */
 .nav {
   position: relative;
-  background-color: #222;
+  background-color: #393b47;
   padding-inline: 50px;
   top: 0;
   left: 0;
@@ -29,7 +38,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 0;
+  padding: 13px 0;
   /* transition: all 0.3s ease-in-out; */
 }
 
@@ -42,7 +51,7 @@
 
 .nav a {
   color: #fff;
-  font-family: "Teko", sans-serif;
+  font-family: var(--font);
   font-size: 24px;
   text-decoration: none;
   padding-inline: 15px;
@@ -66,9 +75,82 @@
 }
 .logo span {
   color: var(--theme-color);
+  font-family: var(--font);
   font-weight: 600;
   font-size: 40px;
   transition: all 0.3s ease-in-out;
+  text-shadow: var(--stroke-white);
 }
 
-/*             NAV BAR          */
+/*               CONTENT           */
+.content {
+  height: 65vh;
+}
+.content img {
+  height: 65vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.content h2 {
+  color: white;
+  font-family: var(--font);
+  letter-spacing: 2px;
+  font-size: 70px;
+  position: relative;
+  text-align: center;
+  top: -250px;
+  text-shadow: var(--shadow-black);
+}
+.content h2:hover {
+  cursor: default;
+}
+/*               ARTICLE           */
+
+.contentarea .title {
+  text-align: center;
+  font-family: var(--font);
+  font-size: 35px;
+  margin: 13px 0;
+}
+
+.contentp {
+  padding: 0 20px;
+  text-align: center;
+  font-style: italic;
+}
+/*               FOOTER           */
+footer {
+  background-color: #393b47;
+  margin: 20px 0 0 0;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-family: var(--font);
+  letter-spacing: 2px;
+}
+
+/*               MEDIA           */
+
+@media screen and (max-width: 600px) {
+  .nav {
+    padding-inline: 20px;
+  }
+  .logo span {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .logo a {
+    letter-spacing: 2px;
+    font-size: 20px;
+  }
+  .nav a {
+    font-size: 18px;
+    padding-inline: 5px;
+    font-weight: 300;
+  }
+}
