@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        margin-top: 1rem;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .honeypot {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <form>
+          <label aria-hidden="true" hidden class="honeypot" for="honeypot">
+            <input
+              hidden
+              autocomplete="off"
+              class="honeypot"
+              aria-hidden="true"
+              id="honeypot"
+              type="text"
+              tabindex="-1"
+            />
+          </label>
+          <div>
+            <label for="email">Email</label>
+            <input
+              autocomplete="email"
+              required
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              autocomplete="new-password"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
