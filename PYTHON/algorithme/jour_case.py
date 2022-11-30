@@ -5,7 +5,7 @@ match a:
     case 3: print("Mercredi")
     case 4: print("Jeudi")
     case 5: print("Vendredi")
-    case 6: print("Samedi")
+    case 6:print("Samedi")
     case 7: print("Dimanche")
-    case _: print("error")
+    case _: print("Error")
 
