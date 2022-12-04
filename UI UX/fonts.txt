@@ -2,3 +2,5 @@ Setebos
 milanesa serif
 Poppins
 Almendra
+FONT-FAMILY
+Sora, sans-serif

@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <cs50.h>
+#include "cs50.h"
 
 int get_amount(void);
-int calculate_200dh (int amount);
-int calculate_100dh (int amount);
-int calculate_50dh (int amount);
-int calculate_20dh (int amount);
-int calculate_10dh (int amount);
-int calculate_5dh (int amount);
-int calculate_2dh (int amount);
-int calculate_1dh (int amount);
+int calculate_200dh(int amount);
+int calculate_100dh(int amount);
+int calculate_50dh(int amount);
+int calculate_20dh(int amount);
+int calculate_10dh(int amount);
+int calculate_5dh(int amount);
+int calculate_2dh(int amount);
+int calculate_1dh(int amount);
 
-int main (void)
+int main(void)
 {
     int amount = get_amount();
     // The amount given by the customer
@@ -51,7 +51,7 @@ int main (void)
     int total = _200dh + _100dh + _50dh + _20dh + _10dh + _5dh + _2dh + _1dh;
     // The total
 
-    printf("200DH : %d\n100DH : %d\n50DH : %d\n20DH : %d\n10DH : %d\n5DH : %d\n2DH : %d\n1DH : %d\nTotal : %d\n",_200dh,_100dh,_50dh,_20dh,_10dh,_5dh,_2dh,_1dh,total);
+    printf("200DH : %d\n100DH : %d\n50DH : %d\n20DH : %d\n10DH : %d\n5DH : %d\n2DH : %d\n1DH : %d\nTotal : %d\n", _200dh, _100dh, _50dh, _20dh, _10dh, _5dh, _2dh, _1dh, total);
 }
 
 int get_amount(void)
@@ -60,47 +60,46 @@ int get_amount(void)
     do
     {
         amount = get_int("Amount : ");
-    }
-    while (amount < 0);
+    } while (amount < 0);
     return amount;
 }
 
-int calculate_200dh (int amount)
+int calculate_200dh(int amount)
 {
     return amount / 200;
 }
 
-int calculate_100dh (int amount)
+int calculate_100dh(int amount)
 {
     return amount / 100;
 }
 
-int calculate_50dh (int amount)
+int calculate_50dh(int amount)
 {
     return amount / 50;
 }
 
-int calculate_20dh (int amount)
+int calculate_20dh(int amount)
 {
     return amount / 20;
 }
 
-int calculate_10dh (int amount)
+int calculate_10dh(int amount)
 {
     return amount / 10;
 }
 
-int calculate_5dh (int amount)
+int calculate_5dh(int amount)
 {
     return amount / 5;
 }
 
-int calculate_2dh (int amount)
+int calculate_2dh(int amount)
 {
     return amount / 2;
 }
 
-int calculate_1dh (int amount)
+int calculate_1dh(int amount)
 {
     return amount;
 }
