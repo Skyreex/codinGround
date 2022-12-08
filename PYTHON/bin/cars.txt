@@ -1,0 +1,16 @@
+1955 | Mercedes-Benz | 300SL  |  242.5 km/h | 2,996  cm3 | (182.8 cu in) inline-6 158 kW (215 PS; 212 hp) | 1400
+1959 | Aston Martin | DB4 GT | 245 km/h | 3,670  cm3 | (224 cu in) inline-6 225 kW (306 PS; 302 hp) | 75
+1963 | Iso Grifo | GL 365 | 259 km/h | 5,354  cm3 | (326.7 cu in) V8 268 kW (365 PS; 360 hp) | 400
+1965 | AC Cobra | Mk III 427 | 266 km/h | 6,998   cm3 | | (427.0 cu in) V8 362 kW (492 PS; 485 hp) | 25
+1967 | Lamborghini | Miura P400 | 275 km/h | 3,929  cm3 | (239.8 cu in) V12 261 kW (355 PS; 350 hp) | 275
+1968 | Ferrari | 365 GTB/4 Daytona | 280 km/h | 4,390  cm3 | (268 cu in) V12 262 kW (357 PS; 352 hp) |  1400
+1969 | Lamborghini | Miura P400S | 288.6 km/h | 3,929  cm3 | (239.8 cu in) V12 276 kW (375 PS; 370 hp) | 338
+1982 | Lamborghini | Countach LP500 S | 293 km/h | 4,754  cm3 | (290.1 cu in) V12 280 kW (380 PS; 375 hp) | 323
+1983 | Ruf | BTR | 305 km/h | 3,367  cm3 | (205.5 cu in) turbocharged flat-6 275 kW (374 PS; 369 hp) | 2030
+1986 | Porsche | 959 | 319 km/h | 2,849  cm3 | (173.9 cu in) twin-turbocharged flat-6 331 kW (450 PS; 444 hp) | 337
+1987 | Ruf CTR | 342 km/h | 3,367  cm3 | (205.5 cu in) twin-turbocharged flat-6 345 kW (469 PS; 463 hp) | 29
+1993 | McLaren | F1 | 355 km/h | 6,064  cm3 | (370.0 cu in) V12 461 kW (627 PS; 618 hp) | 64
+2005 | Bugatti | Veyron EB 16.4 | 408.47 km/h | 7,993  cm3 | (487.8 cu in) quad-turbocharged W16 736 kW (1,001 PS; 987 hp) | 300
+2007 | SSC | Ultimate Aero | 412.22 km/h | 6.3-liter twin turbo V8 engine | 5
+2010 | Bugatti | Veyron 16.4 Super Sport | 431.072 km/h | 7,993  cm3 | (487.8 cu in) quad-turbocharged W16 882 kW (1,199 PS; 1,183 hp) | 30
+2017 | Koenigsegg | Agera RS | 447.19 km/h | 5,000  cm3 | (310 cu in) twin-turbocharged V8 1,000 kW (1,360 PS; 1,341 hp) | 25

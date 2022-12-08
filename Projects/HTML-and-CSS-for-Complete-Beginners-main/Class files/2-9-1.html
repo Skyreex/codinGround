@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HTML and CSS for Complete Beginners: Example 2-9-1</title>
+
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --shadow-: rgba(0, 0, 0, 0.107);
+      }
+      img.hero {
+        height: 130px;
+        width: 100%;
+        object-fit: cover;
+      }
+      h1 {
+        font-weight: 800;
+        color: black;
+        margin-left: 16px;
+      }
+      html {
+        font-family: sans-serif;
+      }
+      .container {
+        /* background-color: aquamarine; */
+        width: 256px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px -1px 5px var(--shadow-), -1px -1px 5px var(--shadow-),
+          1px 1px 5px var(--shadow-), -1px 1px 5px var(--shadow-);
+      }
+      h3 {
+        margin-left: 16px;
+        font-weight: 700;
+      }
+      div li {
+        color: rgb(116, 116, 116);
+        font-size: 14px;
+      }
+      .steps {
+        margin-inline: 16px;
+        background-color: rgb(238, 238, 238);
+      }
+      .steps li {
+        color: rgb(90, 90, 90);
+      }
+      p {
+        display: flex;
+        justify-content: center;
+      }
+      button {
+        border: 2px rgb(192, 24, 24) solid;
+        color: rgb(192, 24, 24);
+        font-weight: 600;
+        width: 220px;
+        background-color: white;
+        height: 40px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="learn">
+      <!-- Practice area start -->
+      <div class="container">
+        <h1>Classic coffee</h1>
+        <img
+          class="hero"
+          src="../../MyCoffee/images/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg"
+        />
+        <div>
+          <h3>Ingredients</h3>
+          <ul>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+          </ul>
+        </div>
+        <div class="steps">
+          <h3>Steps</h3>
+          <ol>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem ipsum dolor sit.</li>
+          </ol>
+        </div>
+        <p><button type="button">Save this recipe</button></p>
+      </div>
+
+      <!-- Practice area end -->
+    </section>
+
+    <section class="preview" data-content="lesson 2-9: Using Lists">
+      <img
+        width="560px"
+        src="images/reference/recipe.png"
+        alt="Reference image"
+      />
+    </section>
+  </body>
+</html>
