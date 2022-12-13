@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+:root {
+  --primary-color: #2313c8;
+  --secondary-color1: #8808d4;
+  --secondary-color2: #0c0647;
+  --bg: #e5e5e5;
+  --brand-gradient1: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color1)
+  );
+  --brand-gradient2: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color2)
+  );
+  --invalid: #c81f13;
+  --valid: #13c83b;
+  --black100: #212025;
+  --black75: rgba(33, 32, 37, 0.75);
+  --black50: rgba(33, 32, 37, 0.5);
+  --black25: rgba(33, 32, 37, 0.25);
+  --black10: rgba(33, 32, 37, 0.1);
+  --black05: rgba(33, 32, 37, 0.05);
+  --white: #fff;
+  --main-font: "Signika", sans-serif;
+  --paragraph-font: "Open Sans", sans-serif;
+  --bold: 700;
+  --light: 300;
+  --regular: 400;
+}
+
+/*      RESET       */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+/*--------------------Header--------------------*/
+
+header {
+  align-items: center;
+  padding: 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  font-family: var(--main-font);
+  border-bottom: var(--black25) solid 1px;
+}
+/*      NAV BAR       */
+
+nav li {
+  display: inline-block;
+  padding-right: 1.25rem;
+}
+nav li a {
+  color: var(--black100);
+  font-weight: var(--bold);
+  font-size: 0.9em;
+}
+a.home {
+  color: var(--secondary-color1);
+}
+/*      LOGO       */
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo a {
+  font-size: 2em;
+  font-weight: var(--bold);
+  background: var(--brand-gradient1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/*      BUTTONS       */
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  height: 2.5rem;
+}
+
+a button {
+  height: 100%;
+  width: 5rem;
+  font-family: var(--main-font);
+  font-weight: 600;
+  border-radius: 2rem;
+  font-size: 0.9em;
+}
+
+a button#signup {
+  width: 6rem;
+}
+
+.type1 {
+  color: var(--black100);
+  background: linear-gradient(white, white) padding-box,
+    var(--brand-gradient1) border-box;
+  border: 2px solid transparent;
+}
+.type2 {
+  border: none;
+  color: var(--white);
+  background: var(--brand-gradient1);
+}
+.type1:hover,
+.type2:hover {
+  transform: scale(1.03);
+  font-size: 0.93em;
+}
