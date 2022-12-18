@@ -1,0 +1,25 @@
+body {
+    font-family: poppins;
+}
+
+nav {
+    background-color: aquamarine;
+    
+    ul li {
+        color: brown;
+        padding-left: 1em;
+        list-style: none;
+        
+        &:before{
+        content: '';
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: url("add-chat.svg");
+        background-size: contain;
+        left: 2.5em;
+    }
+    }
+    
+}
+
