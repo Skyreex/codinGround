@@ -8,24 +8,30 @@
     <title>Document</title>
   </head>
   <body>
-    <nav>
-      <button onclick="myFunction()">Click me</button>
-      <a class="btnn" onclick="myFunction()">
-        <img src="menu.svg" class="btn"
-      /></a>
-      <ul class="list">
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>ABOUT</li>
-        <li>ABOUT</li>
-        <li>CONTACT</li>
-      </ul>
-    </nav>
+    <div class="container">
+      <img src="menu.svg" class="btn" id="mobile-cta" />
+      <nav>
+        <span class="close">X</span>
+
+        <ul class="list">
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>ABOUT</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </div>
     <script>
-      function myFunction() {
-        var
-        document.getElementsByClassName("list").display = "block";
-      }
+      const mobileBtn = document.getElementById("mobile-cta");
+      const nav = document.querySelector("nav");
+      const closeBtn = document.querySelector("span");
+      mobileBtn.addEventListener("click", () => {
+        nav.style.display = "block";
+      });
+      closeBtn.addEventListener("click", () => {
+        nav.style.display = "none";
+      });
     </script>
   </body>
 </html>

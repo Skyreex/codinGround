@@ -9,7 +9,6 @@ body {
   justify-content: center;
 }
 
-
 h1 {
   width: 150px;
   background-color: rgba(245, 243, 243, 0.747);
@@ -38,18 +37,14 @@ h1::after {
 }
 
 h1:hover {
-    background-color: red;
-    box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
-
+  background-color: red;
+  box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
 }
 
 h1:hover::after {
   width: 86%;
   text-shadow: 0 0 8px 0 #00d9ff;
 }
-
-
-
 
 /* click1----------- */
 
@@ -92,8 +87,6 @@ h1:hover::after {
   height: 100%;
   background-color: red;
 }
-
-
 
 /* click2----------- */
 
@@ -153,9 +146,7 @@ h1:hover::after {
   height: 50%;
 }
 
-
 /* click3----------- */
-
 
 .click3 {
   width: 120px;
@@ -198,7 +189,6 @@ h1:hover::after {
   color: rgb(255, 255, 255);
   box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
 }
-
 
 /* click4----------- */
 
@@ -259,8 +249,6 @@ h1:hover::after {
   top: 50%;
 }
 
-
-
 /* click5----------- */
 
 .click5 {
@@ -284,11 +272,10 @@ h1:hover::after {
 }
 
 .click5:hover {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
-  }
-  
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+}
 
 .click5::before {
   content: "";
@@ -323,284 +310,259 @@ h1:hover::after {
   left: 50%;
 }
 
-
-
 /* click6----------- */
 
 .click6 {
-    width: 120px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 0, 0);
-    outline: 0;
-    border: 0;
-    border-radius: 8px;
-    background-color: rgba(245, 243, 243, 0.747);
-    font-size: 20px;
-    position: relative;
-    top: 350px;
-    overflow: hidden;
-    transition: all 0.5s;
-    z-index: 1;
-  }
-  
-  .click6:hover {
-      cursor: pointer;
-      color: rgb(255, 255, 255);
-      box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
-    }
-    
-  
-  .click6::before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    width: 0%;
-    height: 0%;
-    border-radius: 0 0 9px 9px ;
-    transform: translate(0px, 17px);
-    background-color: rgb(255, 0, 0);
-    transition: all 1s;
-    z-index: -1;
-  }
-  
-  .click6:hover::before {
-    width: 100%;
-    height: 100%;
-  }
+  width: 120px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgba(245, 243, 243, 0.747);
+  font-size: 20px;
+  position: relative;
+  top: 350px;
+  overflow: hidden;
+  transition: all 0.5s;
+  z-index: 1;
+}
 
-    .click6:hover::after {
-    left: 50%;
-    }
+.click6:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+}
 
+.click6::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  width: 0%;
+  height: 0%;
+  border-radius: 0 0 9px 9px;
+  transform: translate(0px, 17px);
+  background-color: rgb(255, 0, 0);
+  transition: all 1s;
+  z-index: -1;
+}
 
+.click6:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.click6:hover::after {
+  left: 50%;
+}
 
 /* click7----------- */
 
-
 .click7 {
-    width: 120px;
-    height: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 0, 0);
-    outline: 0;
-    border: 0;
-    border-radius: 8px;
-    background-color: rgba(245, 243, 243, 0.747);
-    font-size: 20px;
-    position: relative;
-    top: 380px;
-    overflow: hidden;
-    transition: all 0.5s;
-    z-index: 1;
-    box-sizing: border-box;
-  }
-  
-  .click7:hover {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+  width: 120px;
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgba(245, 243, 243, 0.747);
+  font-size: 20px;
+  position: relative;
+  top: 380px;
+  overflow: hidden;
+  transition: all 0.5s;
+  z-index: 1;
+  box-sizing: border-box;
 }
-    
-  
-  .click7::before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    width: 0%;
-    height: 0%;
-    border-radius: 9px ;
-    transform: translate(0px, 17px);
-    background-color: rgb(255, 0, 0);
-    transition: all 1s;
-    z-index: -1;
-    rotate: 90deg;
-  }
-  
-  
-  .click7:hover::before {
-    width: 100%;
-    height: 100%;
-    rotate: 0deg;
-  }
-  
-  .click6:hover::after {
-    left: 50%;
-  }
 
+.click7:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+}
 
+.click7::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  width: 0%;
+  height: 0%;
+  border-radius: 9px;
+  transform: translate(0px, 17px);
+  background-color: rgb(255, 0, 0);
+  transition: all 1s;
+  z-index: -1;
+  rotate: 90deg;
+}
 
+.click7:hover::before {
+  width: 100%;
+  height: 100%;
+  rotate: 0deg;
+}
 
-  
+.click6:hover::after {
+  left: 50%;
+}
+
 /* click8----------- */
 
-
 .click8 {
-    width: 120px;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 0, 0);
-    outline: 0;
-    border: 0;
-    border-radius: 8px;
-    background-color: rgba(245, 243, 243, 0.747);
-    font-size: 20px;
-    position: relative;
-    top: 410px;
-    overflow: hidden;
-    transition: all 1s;
-    z-index: 1;
-    box-sizing: border-box;
-  }
-  
-  .click8:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: red;
-    box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+  width: 120px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgba(245, 243, 243, 0.747);
+  font-size: 20px;
+  position: relative;
+  top: 410px;
+  overflow: hidden;
+  transition: all 1s;
+  z-index: 1;
+  box-sizing: border-box;
 }
-    
-  
-  .click8::before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    left: 0%;
-    width: 0%;
-    height: 3px;
-    border-radius: 9px ;
-    transform: translate(0px, 17px);
-    background-color: rgb(255, 255, 255);
-    transition: all 1s;
-    z-index: -1;
-  }
-  
-  
-  .click8:hover::before {
-    width: 100%;
-    
-  }
-  
-  .click8::after {
-    content: "";
-    position: absolute;
-    top: 94%;
-    left: 100%;
-    width: 100%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    transition: all 1s;
-    z-index: -1;
-  }
-  
-  .click8:hover::after {
-    left: 0%;
-  }
 
-  .click8 p {
-    position: absolute;
-    top: -20;
-    left: 97.5%;
-    width: 4px;
-    height: 0px;
-    background-color: rgb(255, 255, 255);
-    transition: all 1s;
-    
-  }
+.click8:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: red;
+  box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+}
 
-  .click8:hover p {
-    height: 100%;
-  }
+.click8::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 0%;
+  width: 0%;
+  height: 3px;
+  border-radius: 9px;
+  transform: translate(0px, 17px);
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+  z-index: -1;
+}
 
-  .click8 h5 {
-    position: absolute;
-    top: 10;
-    left: 0%;
-    width: 3px;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    transition: all 1s;
-  }
+.click8:hover::before {
+  width: 100%;
+}
 
-  .click8:hover h5 {
-    top: -25;
-  }
+.click8::after {
+  content: "";
+  position: absolute;
+  top: 94%;
+  left: 100%;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+  z-index: -1;
+}
 
+.click8:hover::after {
+  left: 0%;
+}
 
-   
+.click8 p {
+  position: absolute;
+  top: -20;
+  left: 97.5%;
+  width: 4px;
+  height: 0px;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+.click8:hover p {
+  height: 100%;
+}
+
+.click8 h5 {
+  position: absolute;
+  top: 10;
+  left: 0%;
+  width: 3px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+.click8:hover h5 {
+  top: -25;
+}
+
 /* click9----------- */
 
-
 .click9 {
-    width: 120px;
-    height: 38px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(255, 0, 0);
-    outline: 0;
-    border: 0;
-    border-radius: 8px;
-    background-color: rgba(245, 243, 243, 0.747);
-    font-size: 20px;
-    position: relative;
-    top: 440px;
-    overflow: hidden;
-    transition: all 1s;
-    z-index: 1;
-    box-sizing: border-box;
-  }
-  
-  .click9:hover {
-    color: #ffffff;
-    cursor: pointer;
-    background-color: red;
-    box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+  width: 120px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background-color: rgba(245, 243, 243, 0.747);
+  font-size: 20px;
+  position: relative;
+  top: 440px;
+  overflow: hidden;
+  transition: all 1s;
+  z-index: 1;
+  box-sizing: border-box;
 }
-    
-  
-  .click9::before {
-    content: "";
-    position: absolute;
-    top: -17px;
-    left: 0%;
-    width: 0%;
-    height: 3px;
-    border-radius: 9px ;
-    transform: translate(0px, 17px);
-    background-color: rgb(255, 255, 255);
-    transition: all 1s;
-    z-index: -1;
-  }
-  
-  
-  .click9:hover::before {
-    width: 100%;
-    
-  }
-  
-  .click9::after {
-    content: "";
-    position: absolute;
-    top: 94%;
-    left: 100%;
-    width: 100%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    transition: all 1s;
-    z-index: -1;
-  }
-  
-  .click9:hover::after {
-    left: 0%;
-  }
 
+.click9:hover {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: red;
+  box-shadow: 0 0 15px 3px rgba(255, 0, 0, 0.815);
+}
 
+.click9::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 0%;
+  width: 0%;
+  height: 3px;
+  border-radius: 9px;
+  transform: translate(0px, 17px);
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+  z-index: -1;
+}
+
+.click9:hover::before {
+  width: 100%;
+}
+
+.click9::after {
+  content: "";
+  position: absolute;
+  top: 94%;
+  left: 100%;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  transition: all 1s;
+  z-index: -1;
+}
+
+.click9:hover::after {
+  left: 0%;
+}

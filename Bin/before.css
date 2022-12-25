@@ -5,11 +5,13 @@ body {
 nav {
   background-color: aquamarine;
 }
+
 nav ul li {
   color: brown;
   padding-left: 1em;
   list-style: none;
 }
+
 nav ul li:before {
   content: "";
   position: absolute;
@@ -18,4 +20,6 @@ nav ul li:before {
   background-image: url("add-chat.svg");
   background-size: contain;
   left: 2.5em;
-}/*# sourceMappingURL=before.css.map */
+}
+
+/*# sourceMappingURL=before.css.map */
