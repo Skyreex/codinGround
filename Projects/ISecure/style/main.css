@@ -49,6 +49,45 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+h2 {
+  color: var(--black);
+  font-family: var(--main-font);
+  font-size: 2.5em;
+}
+h4 {
+  color: var(--black);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 2em;
+}
+h6 {
+  color: var(--black);
+  font-family: var(--main-font);
+  font-size: 1.31em;
+}
+p {
+  color: var(--black75);
+  font-family: var(--paragraph-font);
+  font-size: 15px;
+}
+span {
+  font-weight: bolder;
+}
+.text-center {
+  text-align: center;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background: radial-gradient(var(--primary-color), var(--secondary-color1));
+  border-radius: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
+}
 /*--------------------Header--------------------*/
 
 header {
@@ -249,10 +288,6 @@ img.icon2 {
   gap: 2rem;
 }
 .content-head h2 {
-  color: var(--black);
-  font-family: var(--main-font);
-  text-align: center;
-  font-size: 2.5em;
   width: 70%;
 }
 .content-head p {
@@ -283,12 +318,6 @@ img.icon2 {
   font-family: var(--main-font);
 }
 
-.content-info p {
-  color: var(--black75);
-  font-family: var(--paragraph-font);
-  font-size: 15px;
-}
-
 img.info {
   width: 32rem;
 }
@@ -307,4 +336,136 @@ button.learn-more {
 }
 img.info2 {
   width: 29rem;
+}
+
+/* -------------------- PRICING -------------------- */
+.pricing p {
+  margin-top: 1.5rem;
+}
+
+.pricing-plans {
+  display: flex;
+  margin: 4rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.plan {
+  min-width: 22.3rem;
+  height: 27.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 2rem;
+  padding-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+.plan1 {
+  border-color: var(--black100);
+  border-radius: 2rem;
+  border: 3px solid;
+}
+.plan2 {
+  background: linear-gradient(white, white) padding-box,
+    var(--brand-gradient1) border-box;
+  border-radius: 2rem;
+  border: 3px solid transparent;
+}
+.btn1 {
+  width: 100%;
+  font-size: var(--bold);
+  padding: 1rem;
+  color: var(--primary-color);
+  background: linear-gradient(white, white) padding-box,
+    var(--brand-gradient1) border-box;
+  border: 3px solid transparent;
+}
+.pricing-plans a {
+  width: 15rem;
+  border-radius: inherit;
+  box-shadow: var(--shadow);
+}
+.btn2 {
+  width: 100%;
+  font-size: var(--bold);
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  background: var(--brand-gradient1);
+  border: none;
+}
+.plan-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.plan-title p {
+  margin-top: 1.7rem;
+  line-height: 1.5rem;
+}
+.pricing-plans span {
+  color: var(--primary-color);
+}
+/* -------------------- CONTACT -------------------- */
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10rem 5rem;
+  padding-block: 5rem;
+  align-items: center;
+}
+.contact-form {
+  max-width: 26rem;
+}
+
+input {
+  width: 100%;
+  height: 2.5rem;
+  font-family: var(--main-font);
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: var(--black75);
+}
+input:focus {
+  outline: none;
+  border: 1px solid;
+  background-color: var(--black05);
+  border-color: var(--black75);
+}
+input[type="submit"] {
+  border: none;
+  margin-top: 2rem;
+  background: #212025;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  box-shadow: var(--shadow);
+}
+.contact-info {
+  background-color: #212025;
+  padding: 3rem;
+  height: max-content;
+  width: 25rem;
+  box-shadow: var(--shadow);
+}
+.contact-info img {
+  filter: invert(100%) sepia(0%) saturate(11%) hue-rotate(208deg)
+    brightness(103%) contrast(103%);
+  width: 1.5rem;
+}
+.info p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  font-weight: var(--light);
+  gap: 1rem;
+  margin-block: 1.3rem;
+}
+
+.contact-info h4 {
+  color: white;
 }
