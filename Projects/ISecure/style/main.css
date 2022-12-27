@@ -410,8 +410,9 @@ img.info2 {
 .contact {
   display: flex;
   justify-content: space-evenly;
-  margin: 10rem 5rem;
+  margin: 10rem auto;
   padding-block: 5rem;
+  gap: 1rem;
   align-items: center;
 }
 .contact-form {
@@ -468,4 +469,47 @@ input[type="submit"] {
 
 .contact-info h4 {
   color: white;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: white;
+  border-top: 1px solid;
+  border-color: var(--black25);
+  align-items: center;
+  padding: 1rem 3rem;
+}
+footer p {
+  font-size: 0.7em;
+  color: var(--black75);
+}
+footer h6 {
+  font-family: var(--main-font);
+  font-size: 1.1em;
+  color: var(--black100);
+  font-weight: 600;
+}
+footer li {
+  display: inline-block;
+}
+footer ul.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer ul.privacy-terms {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+footer a img {
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+img.fb {
+  padding: 0;
 }
