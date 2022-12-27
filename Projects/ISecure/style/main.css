@@ -1,19 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
 :root {
   --primary-color: #2313c8;
   --secondary-color1: #8808d4;
-  --secondary-color2: #0c0647;
-  --bg: #e5e5e5;
+  --bg: rgb(255, 255, 255);
   --brand-gradient1: linear-gradient(
     90deg,
     var(--primary-color),
     var(--secondary-color1)
-  );
-  --brand-gradient2: linear-gradient(
-    90deg,
-    var(--primary-color),
-    var(--secondary-color2)
   );
   --invalid: #c81f13;
   --valid: #13c83b;
@@ -23,12 +15,8 @@
   --black25: rgba(33, 32, 37, 0.25);
   --black10: rgba(33, 32, 37, 0.1);
   --black05: rgba(33, 32, 37, 0.05);
-  --white: #fff;
   --main-font: "Signika", sans-serif;
-  --paragraph-font: "Open Sans", sans-serif;
-  --bold: 700;
-  --light: 300;
-  --regular: 400;
+  --paragraph-font: "OpenSans", sans-serif;
   --shadow: 0px 100px 80px rgba(0, 0, 0, 0.07),
     0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198),
     0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275),
@@ -48,22 +36,36 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--bg);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main-font);
+  color: var(--black100);
 }
 h2 {
-  color: var(--black);
-  font-family: var(--main-font);
+  font-weight: 700;
   font-size: 2.5em;
 }
 h4 {
-  color: var(--black);
-  font-family: var(--main-font);
   font-weight: 700;
   font-size: 2em;
 }
+h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+h5 {
+  font-weight: 400;
+  font-size: 1em;
+}
 h6 {
-  color: var(--black);
-  font-family: var(--main-font);
   font-size: 1.31em;
+  font-weight: 600;
 }
 p {
   color: var(--black75);
@@ -106,7 +108,7 @@ nav li {
 }
 nav li a {
   color: var(--black100);
-  font-weight: var(--bold);
+  font-weight: 700;
   font-size: 0.9em;
 }
 a.home {
@@ -117,9 +119,9 @@ a.home {
   display: flex;
   justify-content: center;
 }
-.logo a {
-  font-size: 2em;
-  font-weight: var(--bold);
+.logo h3 {
+  font-size: 2.5em;
+  font-weight: 700;
   background: var(--brand-gradient1);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -157,14 +159,13 @@ a button#signup {
 }
 .type2 {
   border: none;
-  color: var(--white);
+  color: white;
   background: var(--brand-gradient1);
 }
 .type1:hover,
 .type2:hover {
-  transform: scale(1.03);
-  font-size: 0.93em;
-  font-size: var(--bold);
+  transform: scale(1.02);
+  font-weight: 700;
 }
 
 /* -------------------- HERO -------------------- */
@@ -177,9 +178,8 @@ a button#signup {
   width: 41rem;
 }
 .hero h3 {
-  font-family: var(--main-font);
   font-size: 2.6em;
-  font-weight: var(--light);
+  font-weight: 300;
   background: var(--brand-gradient1);
   color: transparent;
   line-height: 100%;
@@ -189,15 +189,11 @@ a button#signup {
 }
 
 .hero h1 {
-  font-family: var(--main-font);
   font-size: 5em;
-  font-weight: var(--bold);
-  color: var(--black100);
   line-height: 100%;
 }
 
 .hero p {
-  font-family: var(--paragraph-font);
   font-size: 15px;
   color: var(--black75);
   text-align: center;
@@ -235,10 +231,13 @@ img.icon2 {
 }
 
 .hero > a {
-  color: var(--black);
+  color: var(--black75);
   font-family: var(--main-font);
   text-decoration: underline;
   margin-top: 1rem;
+}
+.hero h6 {
+  color: white;
 }
 
 /* -------------------- SPONSORS -------------------- */
@@ -261,10 +260,7 @@ img.icon2 {
   margin-top: 11rem;
 }
 .sponsors h3 {
-  font-weight: var(--light);
   font-family: var(--paragraph-font);
-  color: var(--black);
-  font-size: 1.5em;
 }
 .sponsors-logo {
   display: flex;
@@ -290,11 +286,7 @@ img.icon2 {
 .content-head h2 {
   width: 70%;
 }
-.content-head p {
-  color: var(--black75);
-  font-family: var(--paragraph-font);
-  font-size: 15px;
-}
+
 .content-left {
   display: flex;
   gap: 8rem;
@@ -314,8 +306,7 @@ img.icon2 {
   margin-top: 5rem;
 }
 .content-info h3 {
-  color: var(--black);
-  font-family: var(--main-font);
+  font-weight: 700;
 }
 
 img.info {
@@ -328,7 +319,7 @@ button.learn-more {
   height: 3rem;
   font-family: var(--main-font);
   color: var(--black75);
-  font-weight: var(--bold);
+  font-weight: 700;
   border: 3px #212025 solid;
 }
 .content-info a {
@@ -373,7 +364,8 @@ img.info2 {
 }
 .btn1 {
   width: 100%;
-  font-size: var(--bold);
+  font-weight: 700;
+  font-size: 1em;
   padding: 1rem;
   color: var(--primary-color);
   background: linear-gradient(white, white) padding-box,
@@ -387,9 +379,10 @@ img.info2 {
 }
 .btn2 {
   width: 100%;
-  font-size: var(--bold);
+  font-size: 1em;
+  font-weight: 700;
   padding: 1rem 1.5rem;
-  color: var(--white);
+  color: white;
   background: var(--brand-gradient1);
   border: none;
 }
@@ -462,7 +455,7 @@ input[type="submit"] {
   justify-content: flex-start;
   align-items: center;
   color: white;
-  font-weight: var(--light);
+  font-weight: 300;
   gap: 1rem;
   margin-block: 1.3rem;
 }
@@ -483,14 +476,10 @@ footer {
   padding: 1rem 3rem;
 }
 footer p {
-  font-size: 0.7em;
-  color: var(--black75);
+  font-size: 0.8em;
 }
 footer h6 {
-  font-family: var(--main-font);
   font-size: 1.1em;
-  color: var(--black100);
-  font-weight: 600;
 }
 footer li {
   display: inline-block;

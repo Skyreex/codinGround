@@ -1,18 +1,17 @@
 print("Hello world!")
 print("I LOVE CODING")
 
-
 # ------------------------------
 # DATA
 # ------------------------------
 k9 = "----------------------------"
-print(type("Hello"))                                   # STRING
-print(type(17))                                        # INTEGER
-print(type(10.30))                                     # FLOATING
-print(type([1, 2, 3, 4,]))                             # LIST
-print(type((1, 2, 3, 4,)))                             # TUPLE
-print(type({"One":1, "Two":2, "Three":3, "Four":4 }))  # Dictionary
-print(type(4 == 2+2))                                  # BOOLEAN
+print(type("Hello"))  # STRING
+print(type(17))  # INTEGER
+print(type(10.30))  # FLOATING
+print(type([1, 2, 3, 4, ]))  # LIST
+print(type((1, 2, 3, 4,)))  # TUPLE
+print(type({"One": 1, "Two": 2, "Three": 3, "Four": 4}))  # Dictionary
+print(type(4 == 2 + 2))  # BOOLEAN
 
 # ------------------------------
 Myvariable = "Username"
@@ -59,7 +58,7 @@ print("\x48")
 # Concatenation
 msg1 = "I Love"
 msg2 = "Python"
-print(msg1 +" "+ msg2)
+print(msg1 + " " + msg2)
 
 msg3 = "WA TA SEEEEER"
 msg4 = "VAR??????"
@@ -72,25 +71,24 @@ ARAB
 
 print(haga)
 
-#-----------------------------------------------------------
+# -----------------------------------------------------------
 
 # Indexing ( Access Single Item )
 myString1 = "I Love Python"
 print(myString1[0])  # Index |0  => I|
 print(myString1[3])  # Index |3  => o|
 print(myString1[5])  # Index |5  => e|
-print(myString1[11]) # Index |11 => o|
-print(myString1[-2]) # Index |-2 => o|
-
+print(myString1[11])  # Index |11 => o|
+print(myString1[-2])  # Index |-2 => o|
 
 # Slicing ( Access Multiple Sequence Items )
 # [Start:End]
 print(myString1[7:14])
-print(myString1[:14]) # If no start it well start from 0
-print(myString1[2:])  # If no end it wil go to the end
+print(myString1[:14])  # If no start it starts from 0
+print(myString1[2:])  # If no end it goes to the end
 
-print(myString1[:])   # Full data
-print(myString1[::3]) # Steps
+print(myString1[:])  # Full data
+print(myString1[::3])  # Steps
 
 # Strings Methods
 a1 = "I Love Python"
@@ -110,7 +108,7 @@ print(k9)
 # -----------------------------------------------------------------
 print(a2.rstrip())
 print(k9)
-#-------------------------------------------------------------------
+# -------------------------------------------------------------------
 print(a3.strip("#@"))
 print(a3.rstrip("#@"))
 print(a3.lstrip("#@"))
@@ -118,7 +116,7 @@ print(a3.lstrip("#@"))
 # title ()
 
 a5 = "I Love 3d 3gg 4g+ 2d."
-print(a5.title()) 
+print(a5.title())
 print(k9)
 
 # Capitalize ()
@@ -127,7 +125,7 @@ print(a5.capitalize())
 
 # ZFill
 
-c, f, k = "2", "97","85807644"
+c, f, k = "2", "97", "85807644"
 print(c.zfill(8))
 print(f.zfill(8))
 print(k.zfill(8))
@@ -139,8 +137,6 @@ print(G.upper())
 
 G = "AKRaM"
 print(G.lower())
-
-
 
 # ---------------------------------------------------------
 
@@ -161,9 +157,9 @@ print(a45.rsplit("/", 2))
 # Center ()
 
 a8 = "Akram"
-print(a8.center(9)) # Spaces
-print(a8.center(11, '#')) # Hashes
-print(a8.center(15, '_')) # ______
+print(a8.center(9))  # Spaces
+print(a8.center(11, '#'))  # Hashes
+print(a8.center(15, '_'))  # ______
 
 # count ()
 
@@ -177,7 +173,6 @@ print(bb.swapcase())
 bb = "BaBy"
 print(bb.swapcase())
 
-
 # startswith()
 g = 'BABABA'
 print(g.startswith("B", 4, 6))
@@ -185,12 +180,3 @@ print(g.startswith("B", 4, 6))
 # endswith()
 g = 'BABABA'
 print(g.startswith("1", 4, 6))
-
-
-
-
-
-
-
-
-
