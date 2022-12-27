@@ -5,33 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/lib.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <title>ISecure | Home</title>
   </head>
   <body>
-    <header>
+    <header class="grid align-center grid-212">
       <nav>
         <ul>
-          <li><a href="#" class="home">HOME</a></li>
-          <li><a href="#">PRICING</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#contact">SUPPORT</a></li>
+          <li class="inline-block"><a href="#" class="home">HOME</a></li>
+          <li class="inline-block"><a href="#">PRICING</a></li>
+          <li class="inline-block"><a href="#">ABOUT</a></li>
+          <li class="inline-block"><a href="#contact">SUPPORT</a></li>
         </ul>
       </nav>
-      <div class="logo">
+      <div class="logo flex justify-center">
         <a href="#"><h3>ISECURE</h3></a>
       </div>
-      <div class="buttons">
+      <div class="buttons flex justify-end">
         <a href="#"><button class="type1" type="button">LOGIN</button></a>
         <a href="#"
           ><button id="signup" class="type2" type="button">SIGN UP</button></a
         >
       </div>
     </header>
-    <div class="hero">
+    <div class="hero flex flex-column align-center">
       <h3>Your first step to</h3>
       <h1>ONLINE FREEDOM</h1>
-      <p>
+      <p class="text-center">
         We believe everyone has the right to be safe online, which is why we
         offer our award-winning free antivirus to millions of people around the
         world.
@@ -39,15 +40,15 @@
       <div class="hero-img">
         <img src="data/hero.png" />
       </div>
-      <div class="download-buttons">
+      <div class="download-buttons flex">
         <a href="#">
-          <button class="type2 download" type="button">
+          <button class="type2 download w-auto flex align-center" type="button">
             <h6>DOWNLOAD FOR</h6>
             <img src="data/windows.png" class="icon1" />
           </button>
         </a>
         <a href="#">
-          <button class="type2 download" type="button">
+          <button class="type2 download w-auto flex align-center" type="button">
             <h6>DOWNLOAD FOR</h6>
             <img src="data/apple.png" class="icon2" />
           </button>
@@ -158,7 +159,7 @@
       <div class="pricing-plans">
         <div class="plan1 plan">
           <div class="plan-title">
-            <div class="circle"></div>
+            <div class="circle radius-50"></div>
             <h6>Free Antivirus</h6>
             <p class="text-center">
               Block viruses and malware<br />Protect against ransomware
@@ -170,7 +171,7 @@
         </div>
         <div class="plan2 plan">
           <div class="plan-title">
-            <div class="circle"></div>
+            <div class="circle radius-50"></div>
             <h6>Premium Security</h6>
             <p class="text-center">
               Block viruses and malware<br />
@@ -183,7 +184,7 @@
         </div>
         <div class="plan2 plan">
           <div class="plan-title">
-            <div class="circle"></div>
+            <div class="circle radius-50"></div>
             <h6>Ultimate</h6>
             <p class="text-center">
               Block viruses and malware<br />

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.w-auto {
+  width: auto;
+}
+.text-center {
+  text-align: center;
+}
+.radius-50 {
+  border-radius: 50%;
+}
+.align-center {
+  align-items: center;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.grid {
+  display: grid;
+}
+.inline-block {
+  display: inline-block;
+}
+.grid-212 {
+  grid-template-columns: 2fr 1fr 2fr;
+}
