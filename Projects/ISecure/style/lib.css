@@ -179,3 +179,6 @@
 .blurred {
   filter: blur(30px);
 }
+.blur-m {
+  filter: blur(80px);
+}
