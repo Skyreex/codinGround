@@ -182,3 +182,6 @@
 .blur-m {
   filter: blur(80px);
 }
+.blur-s {
+  filter: blur(40px);
+}
