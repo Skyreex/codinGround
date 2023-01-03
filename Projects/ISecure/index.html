@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <title>ISecure | Home</title>
   </head>
-  <body>
-    <header class="grid align-center grid-212">
+  <body class="mx-w m-auto">
+    <div class="bg"></div>
+    <header class="grid align-center grid-121">
+      <div class="logo flex justify-start">
+        <a href="#"><h3 class="bold">ISECURE</h3></a>
+      </div>
       <nav>
-        <ul>
-          <li class="inline-block"><a href="#" class="opened bold">HOME</a></li>
+        <ul class="flex justify-start">
           <li class="inline-block">
-            <a href="#pricing" class="bold">PRICING</a>
+            <a href="#" class="opened regular">HOME</a>
           </li>
-          <li class="inline-block"><a href="#" class="bold">ABOUT</a></li>
           <li class="inline-block">
-            <a href="#contact" class="bold">SUPPORT</a>
+            <a href="#pricing" class="regular">PRICING</a>
+          </li>
+          <li class="inline-block"><a href="#" class="regular">ABOUT</a></li>
+          <li class="inline-block">
+            <a href="#contact" class="regular">SUPPORT</a>
           </li>
         </ul>
       </nav>
-      <div class="logo flex justify-center">
-        <a href="#"><h3 class="bold">ISECURE</h3></a>
-      </div>
+
       <div class="buttons gap-1 flex justify-end">
         <a href="#"><button class="type1 h-100" type="button">LOGIN</button></a>
         <a href="#"
@@ -35,44 +39,53 @@
         >
       </div>
     </header>
-    <div class="hero flex flex-column align-center gap-1">
-      <h3 class="lighter line-100">Your first step to</h3>
-      <h1 class="line-100">ONLINE FREEDOM</h1>
-      <p class="text-center">
-        We believe everyone has the right to be safe online, which is why we
-        offer our award-winning free antivirus to millions of people around the
-        world.
-      </p>
-      <div class="hero-img">
+    <div class="flex align-center">
+      <div class="hero flex flex-column align-start gap-1">
+        <h3 class="lighter line-100">Your first step to</h3>
+        <h1 class="line-100">ONLINE FREEDOM</h1>
+        <p>
+          We believe everyone has the right to be safe online, which is why we
+          offer our award-winning free antivirus to millions of people around
+          the world.
+        </p>
+
+        <div class="download-buttons gap-2 flex">
+          <a href="#">
+            <button
+              class="type2 download w-auto flex align-center"
+              type="button"
+            >
+              <h6>DOWNLOAD FOR</h6>
+              <img src="data/windows.png" class="icon1" />
+            </button>
+          </a>
+          <a href="#">
+            <button
+              class="type2 download w-auto flex align-center"
+              type="button"
+            >
+              <h6>DOWNLOAD FOR</h6>
+              <img src="data/apple.png" class="icon2" />
+            </button>
+          </a>
+        </div>
+        <a href="#" class="underline">Compare plans</a>
+      </div>
+      <div class="hero-img mx-w">
         <img class="w-100" src="data/hero.png" />
       </div>
-      <div class="download-buttons gap-2 flex">
-        <a href="#">
-          <button class="type2 download w-auto flex align-center" type="button">
-            <h6>DOWNLOAD FOR</h6>
-            <img src="data/windows.png" class="icon1" />
-          </button>
-        </a>
-        <a href="#">
-          <button class="type2 download w-auto flex align-center" type="button">
-            <h6>DOWNLOAD FOR</h6>
-            <img src="data/apple.png" class="icon2" />
-          </button>
-        </a>
-      </div>
-      <a href="#" class="underline">Compare plans</a>
     </div>
-    <div class="sponsors flex flex-column align-center gap-4">
+    <div class="ball ball1 blurred absolute rounded-full"></div>
+    <div class="sponsors mx-w flex flex-column align-center gap-4">
       <h3>Trusted by the World's Best Companies</h3>
       <div class="sponsors-logo flex gap-5">
-        <img src="data/logo-amazon 1.png" />
-        <img src="data/logo-dribbble 1.png" />
-        <img src="data/logo-google 1.png" />
-        <img src="data/logo-reddit 1.png" />
-        <img src="data/logo-twitch 1.png" />
-        <img src="data/logo-wordpress 1.png" />
+        <img src="./data/logo-github.svg" alt="logo-github" />
+        <img src="./data/logo-dropbox.svg" alt="logo-dropbox" />
+        <img src="./data/logo-amazon.svg" alt="logo-amazon" />
+        <img src="./data/logo-reddit.svg" alt="logo-reddit" />
+        <img src="./data/logo-twitch.svg" alt="logo-twitch" />
+        <img src="./data/logo-wordpress.svg" alt="logo-wordpress" />
       </div>
-      <div class="sponsors-filter relative w-100 z-n5"></div>
     </div>
     <div class="content">
       <div class="content-head flex flex-column align-center gap-2">

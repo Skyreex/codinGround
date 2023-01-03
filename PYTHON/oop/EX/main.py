@@ -1,0 +1,57 @@
+from pkg import *
+
+vac1 = Vaccin("PFIZER", "Pfizer-BioNTech", 6)
+vac2 = Vaccin("NVV", "Novavax", 6)
+vac3 = Vaccin("J&J", "Johnson & Johnson’s Janssen", 6)
+
+p1 = Person("BK12412", "Youssef", "RAFIA")
+p2 = Person("123456", "name", "name")
+
+vacp1 = Vacciné(p1, vac1, "10Dec")
+vacp2 = Vacciné(p2, vac3, "12Dec")
+
+dose1 = Dose(p1, vac3, 1, "01Feb", "17Feb")
+dose2 = Dose(p2, vac1, 2, "10Jun", "27Jun")
+
+isfo = CentreVaccination("ISFO", "Route Bouskoura")
+isfo.addVaccin(vac1)
+isfo.addVaccin(vac2)
+isfo.addVaccin(vac3)
+
+isfo.addVacciné(vacp1)
+isfo.addVacciné(vacp2)
+
+p2.Affichage()
+print("-" * 20)
+vacp1.Affichage()
+print("-" * 20)
+vac2.Affichage()
+print("-" * 20)
+dose1.Affichage()
+print("-" * 20)
+isfo.Affichage()
+print("-" * 20)
+print("Conditions : ")
+print(isfo.searchVaccin("PFIZER"))
+print(isfo.searchVacciné("BK12412"))
+isfo.Affichage()
+print("-" * 20)
+isfo.listVacciné[0].Affichage()
+print("#")
+isfo.listVaccin[1].Affichage()
+print("###")
+print(isfo.listVaccin[1].display())
+print("###")
+print(f"Vacciné 1 :\n{isfo.listVacciné[0].display()}")
+print("-" * 20)
+isfo.delVacciné("BK12412")
+print(f"Vacciné 1 edited :\n{isfo.listVacciné[0].display()}")
+print("-" * 20)
+isfo.listVacciné[0].Affichage()
+print("-" * 20)
+isfo.delVaccin("NVV")
+isfo.addDose(dose1)
+isfo.addDose(dose2)
+isfo.listDose[0].setDateeffet2ndd = "00Dec"
+isfo.Affichage()
+

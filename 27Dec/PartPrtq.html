@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+      .flex {
+        display: flex;
+      }
+
+      .flex-end {
+        justify-content: flex-end;
+      }
+      .flex-start {
+        justify-content: flex-start;
+      }
+      .align-center {
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      .space-between {
+        justify-content: space-between;
+      }
+      .uppercase {
+        text-transform: uppercase;
+      }
+      .inline {
+        display: inline;
+      }
+      .gap-1 {
+        gap: 1rem;
+      }
+      header {
+        padding-inline: 1rem;
+      }
+      header h2 {
+        color: rgb(150, 10, 80);
+      }
+      ul {
+        background-color: black;
+      }
+      ul li {
+        margin-inline: 1rem;
+      }
+      li > a {
+        color: white;
+        font-weight: 600;
+      }
+      nav li a:hover {
+        color: black;
+        background-color: green;
+      }
+
+      section img {
+        border: 2px solid gray;
+        box-shadow: 2px 2px 5px black;
+      }
+      footer ul {
+        background-color: green;
+      }
+      footer ul li {
+        color: white;
+      }
+      @media only screen and (max-width: 700px) {
+        nav ul {
+          flex-direction: column;
+          align-items: flex-end;
+        }
+        .hero {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="flex align-center flex-end gap-1">
+      <img src="https://via.placeholder.com/70x100/000.png" />
+      <h2 class="uppercase">Coupe du monde 2022</h2>
+    </header>
+    <nav>
+      <ul class="flex flex-end">
+        <li class="inline"><a href="actualites.html">ACTUALITES</a></li>
+        <li class="inline"><a href="calendrier.html">CALENDRIER</a></li>
+        <li class="inline"><a href="groupes.html">GROUPES</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3 class="uppercase">Actualites coupe du monde 2022</h3>
+      <p>
+        Retrouver toutes les infos de la Coupe du monde 2022 de football qui se
+        déroulera entre le 20 novembre au 18 décembre 2022 au Qatar.
+      </p>
+      <div class="hero flex space-between justify-center">
+        <section>
+          <div>
+            <a href="bresil.html"
+              ><img src="https://via.placeholder.com/550x300/000.png"
+            /></a>
+          </div>
+          <p>La Croatie crée l'exploit, le Brésil éliminé aux tirs au but</p>
+          <hr />
+        </section>
+        <div>
+          <div>
+            <a href="morocco.html"
+              ><img src="https://via.placeholder.com/550x300/000.png"
+            /></a>
+          </div>
+
+          <p>
+            Maroc - Portugal : après l'Espagne, le Maroc d'attaque au voisin
+            portugais
+          </p>
+          <hr />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul class="flex flex-start">
+        <li class="inline uppercase">
+          <a href="plansite.html">plan du site</a>
+        </li>
+        <li class="inline uppercase">
+          <a href="mailto:planetfoot@foot.com">COntact</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

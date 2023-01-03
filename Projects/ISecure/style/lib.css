@@ -5,6 +5,12 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+.mx-w {
+  max-width: 1440px;
+}
+.m-auto {
+  margin: auto;
+}
 .w-auto {
   width: auto;
 }
@@ -47,6 +53,9 @@
 .relative {
   position: relative;
 }
+.absolute {
+  position: absolute;
+}
 .radius-50 {
   border-radius: 50%;
 }
@@ -61,6 +70,9 @@
 }
 .align-center {
   align-items: center;
+}
+.align-start {
+  align-items: flex-start;
 }
 .justify-center {
   justify-content: center;
@@ -97,6 +109,9 @@
 }
 .bold {
   font-weight: 700;
+}
+.regular {
+  font-weight: 600;
 }
 .lighter {
   font-weight: 300;
@@ -147,5 +162,20 @@
   margin-block: 6rem;
 }
 .opened {
-  color: var(--secondary-color1);
+  color: white;
+}
+.m-0 {
+  margin: 0;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.rounded-full {
+  border-radius: 50%;
+}
+.blurred {
+  filter: blur(30px);
 }
