@@ -185,3 +185,9 @@
 .blur-s {
   filter: blur(40px);
 }
+.wrap {
+  flex-wrap: wrap;
+}
+.drop-shadow {
+  filter: drop-shadow(2px 4px 6px black);
+}

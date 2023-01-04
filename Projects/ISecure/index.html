@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <title>ISecure | Home</title>
   </head>
-  <body class="mx-w m-auto">
-    <!-- <div class="bg"></div> -->
+  <div class="percs">
     <div class="ballL ball1 ball1p1 absolute blur-m rounded-full"></div>
+    <div class="ballL ball1 ball1p2 absolute blur-m rounded-full"></div>
     <div class="ballL ball5 ball5p1 absolute blur-m rounded-full"></div>
     <div class="ballL ball1 ball1p3 absolute blur-m"></div>
     <div class="ballL ball6 ball6p1 absolute blur-m"></div>
     <div class="ballM ball1 absolute blur-m rounded-full"></div>
     <div class="ballM ball2 ball2p1 blurred absolute rounded-full"></div>
     <div class="ballM ball2 ball2p2 blurred absolute rounded-full"></div>
+    <div class="ballL ball3 ball3p2 blur-m absolute rounded-full"></div>
     <div class="ballM ball4 ball4p1 blur-s absolute rounded-full"></div>
+    <div class="ballM ball4 ball4p2 blur-s absolute rounded-full"></div>
     <div class="ballM ball3 ball3p1 blurred absolute rounded-full"></div>
+  </div>
+  <body class="mx-w m-auto">
     <header class="grid align-center grid-121">
       <div class="logo flex justify-start">
         <a href="#"><h3 class="bold themed-txt">ISECURE</h3></a>
@@ -58,7 +62,7 @@
           the world.
         </p>
 
-        <div class="download-buttons gap-1 flex">
+        <div class="download-buttons wrap gap-1 flex">
           <a href="#">
             <button
               class="type2 download flex align-center justify-spacebetween"
@@ -84,10 +88,9 @@
         <img class="w-100" src="data/hero.png" />
       </div>
     </div>
-
     <div class="sponsors mx-w flex flex-column align-center gap-4">
-      <h3>Trusted by the World's Best Companies</h3>
-      <div class="sponsors-logo flex gap-5">
+      <h3 class="text-center">Trusted by the World's Best Companies</h3>
+      <div class="sponsors-logo flex gap-5 wrap justify-center">
         <img src="./data/logo-github.svg" alt="logo-github" />
         <img src="./data/logo-dropbox.svg" alt="logo-dropbox" />
         <img src="./data/logo-amazon.svg" alt="logo-amazon" />
@@ -169,7 +172,9 @@
         Save up to <span class="bold">60%</span> on
         <span class="bold">ISecure</span> products before Feb 27th
       </p>
-      <div class="pricing-plans flex align-center justify-spacearound">
+      <div
+        class="pricing-plans wrap gap-2 flex align-center justify-spacearound"
+      >
         <div
           class="plan glass flex justify-spacebetween flex-column align-center"
         >
@@ -212,12 +217,12 @@
               Protect against ransomware<br />
               Secure against phishing sites<br />
               Verify Wi-Fi network security<br />
-              <span class="bold themed-txt">AntiTrack </span>to hide your online
-              identity<br />
-              <span class="bold themed-txt">Cleanup Premium</span> to clean up
-              your PC<br />
-              <span class="bold themed-txt">SecureLine VPN</span> for your
-              safety
+              <span class="bold drop-shadow themed-txt2">AntiTrack </span>to
+              hide your online identity<br />
+              <span class="bold drop-shadow themed-txt2">Cleanup Premium</span>
+              to clean up your PC<br />
+              <span class="bold drop-shadow themed-txt2">SecureLine VPN</span>
+              for your safety
             </p>
           </div>
           <a href="#"
@@ -258,13 +263,10 @@
             id="message"
             placeholder="Message"
           />
-          <input
-            type="submit"
-            class="p-05 white mt-2 border-none bold uppercase"
-          />
+          <input type="submit" class="p-05 white mt-2 bold type2 uppercase" />
         </form>
       </div>
-      <div class="contact-info p-3 h-max">
+      <div class="glass contact-info p-3 h-max">
         <h4 class="white">INFO</h4>
         <div class="info">
           <p class="white flex align-center light gap-1 justify-start">
@@ -289,7 +291,7 @@
         </div>
       </div>
     </div>
-    <footer class="grid align-center grid-121 py-3 px-1 bg-white">
+    <footer class="grid align-center grid-121">
       <p>(C) Copyright Skyreex 2022. All rights reserved</p>
       <ul class="text-center flex gap-1 justify-center">
         <li class="inline-block"><h6>Privacy Policy</h6></li>
