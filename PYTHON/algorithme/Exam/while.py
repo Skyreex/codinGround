@@ -1,22 +1,14 @@
-liste = [1, 2, 3, 4, 5, 6]
+liste = [1, 2, 4, 6, 8, 10]
 # 1
 print(len(liste))
 # 2
-print(liste[2])
+print(liste[2], liste[-1])
 # 3
-print(liste[2:5])  # [3, 4, 5]
-
-
+liste.remove(6)
 # 4
-def somme(l):
-    sum = 0
-    for i in l:
-        sum += i
-    return sum
-
-
-print(somme(liste))
+liste.insert(5, 12)
 # 5
-print(liste[0:5:2])
+liste.append(20)
 # 6
-print(liste)
+print(liste[1:5])
+
