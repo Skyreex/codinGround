@@ -173,10 +173,10 @@
 .float-right {
   float: right;
 }
-.rounded-full {
+/* .rounded-full {
   border-radius: 50%;
-}
-.blurred {
+} */
+/* .blurred {
   filter: blur(30px);
 }
 .blur-m {
@@ -184,7 +184,7 @@
 }
 .blur-s {
   filter: blur(40px);
-}
+} */
 .wrap {
   flex-wrap: wrap;
 }
