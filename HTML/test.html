@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      ul {
+        list-style-type: none;
+      }
+      a,
+      p {
+        text-decoration: none;
+        color: white;
+      }
+
+      footer {
+        background-color: rgb(20, 103, 237);
+        padding: 2rem 4rem 1rem 4rem;
+      }
+      footer .main {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+      }
+      .logo {
+        margin-bottom: 2rem;
+      }
+      .social-icons {
+        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.2rem;
+      }
+      .social-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .social-section p {
+        font-size: 0.7em;
+        line-height: 1rem;
+        text-align: center;
+        max-width: 15rem;
+      }
+
+      .info p {
+        margin-bottom: 1.4rem;
+      }
+      section ul li {
+        margin-bottom: 0.5rem;
+        font-size: 0.8em;
+      }
+      .copyright p {
+        text-align: center;
+        color: white;
+        font-size: 0.8rem;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <div class="main">
+        <section class="social-section">
+          <div class="logo">
+            <img src="https://via.placeholder.com/100" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed,
+            iusto.
+          </p>
+          <div class="social-icons">
+            <img src="https://via.placeholder.com/20" />
+            <img src="https://via.placeholder.com/20" />
+            <img src="https://via.placeholder.com/20" />
+            <img src="https://via.placeholder.com/20" />
+            <img src="https://via.placeholder.com/20" />
+          </div>
+        </section>
+        <section class="info">
+          <p>2 ETG, Lala YAKOUT, Casablanca</p>
+          <p><a href="mailto:name@gmail.com">Contact@mtpa.ma</a></p>
+          <p>+(212)123456789</p>
+        </section>
+        <section>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Nos services</a></li>
+            <li><a href="#">Demander un devis</a></li>
+            <li><a href="#">Contactez-nous</a></li>
+          </ul>
+        </section>
+        <section>
+          <img src="https://via.placeholder.com/200" />
+        </section>
+      </div>
+      <div class="copyright"><p>Copyright &copy; 2023 | Powered by -</p></div>
+    </footer>
+  </body>
+</html>

@@ -1,3 +1,5 @@
+@import url(../fonts/fonts.css);
+
 :root {
   --primary-color: #007950;
   --secondary-color1: #0120af;
@@ -125,7 +127,8 @@ p {
 /*-------------------- Percs --------------------*/
 
 .percs {
-  overflow-inline: clip;
+  /* overflow-inline: clip; */
+  overflow-x: clip;
 }
 
 .ballL {
@@ -235,6 +238,9 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+nav {
+  padding-inline: 3rem !important;
+}
 .nav-item a {
   font-size: 0.9em;
   color: var(--white50);
@@ -284,12 +290,18 @@ a button#signup {
   background-size: cover;
   mix-blend-mode: hard-light;
 }
+.type3 {
+  color: #1ea5e8;
+  background: rgba(255, 255, 255, 0.83);
+  border: 2px solid #0790d4;
+}
 .type1:hover {
   transform: scale(1.02);
   font-weight: 700;
   background: rgba(255, 255, 255, 0.25);
 }
-.type2:hover {
+.type2:hover,
+.type3:hover {
   transform: scale(1.02);
   font-weight: 700;
 }
@@ -494,18 +506,64 @@ footer li a > img {
     max-width: 70%;
     gap: 1rem !important;
   }
+  .login__body main,
+  .signup__body main {
+    width: 65vw !important;
+  }
+  .contact-form {
+    margin-block: 4rem;
+  }
   .contact {
     width: 90%;
   }
   .hero-img {
     display: none;
   }
+  .ball1p2 {
+    top: 220rem;
+    right: 9rem;
+  }
+  .ball6p1 {
+    top: 187rem;
+    left: -33vw;
+  }
+  .ball1p3 {
+    top: 104rem;
+    left: 18vw;
+  }
+  .ball1p2 {
+    top: 257rem;
+    right: 11rem;
+  }
+  .ball3p2 {
+    top: 214rem;
+    left: 19vw;
+    z-index: -2;
+  }
+  .ball4p2 {
+    top: 294rem;
+    left: -1rem;
+    z-index: -1;
+    width: 100%;
+    height: 8rem;
+  }
+  .ball1p1 {
+    top: -3rem;
+    right: -16rem;
+  }
+  .ball5p1 {
+    top: 9rem;
+    left: -7rem;
+  }
+  .login__form,
+  .signup__form {
+    width: 100% !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .ball3p1 {
     top: 52rem;
   }
-
   h3 {
     font-size: 1.3em;
   }
@@ -569,6 +627,7 @@ footer li a > img {
     height: 14rem;
     padding: 1rem;
   }
+
   .ball2p1 {
     top: 33rem;
     left: 1rem;
@@ -584,10 +643,6 @@ footer li a > img {
   .ball4p1 {
     top: 81rem;
     right: 10rem;
-  }
-  .ball1p2 {
-    top: 265rem;
-    right: 0rem;
   }
   .ball3p2 {
     top: 248rem;
@@ -608,26 +663,318 @@ footer li a > img {
     height: 60rem;
     width: 35rem;
   }
+  .ball3p1 {
+    top: 49rem;
+    right: 1rem;
+  }
+  .ball1p2 {
+    top: 263rem;
+    right: 0rem;
+  }
+  .ball4p2 {
+    top: 293rem;
+    left: -1rem;
+    z-index: -1;
+    width: 100%;
+    height: 4rem;
+  }
+  .login__form label {
+    font-size: 0.9em;
+  }
+  .login__form input {
+    height: 2rem !important;
+  }
+  .login__form .form-check-input {
+    height: 1rem !important;
+  }
+  .login__form button {
+    height: 2rem !important;
+    font-weight: 600 !important;
+  }
+  .login__form a {
+    font-weight: 400 !important;
+    font-size: 0.9rem;
+  }
+  .login__form {
+    gap: 0 !important;
+    margin: 2rem 0.5rem !important;
+  }
+  .login__body main {
+    width: 80vw !important;
+  }
 }
+@media screen and (max-width: 600px) {
+  .login__form {
+    margin: 2rem 1rem !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .login__form,
+  .signup__form {
+    margin: 2rem 0.5rem !important;
+  }
+
+  .login__body main,
+  .signup__body main {
+    width: 90vw !important;
+  }
+  nav {
+    padding-inline: 1rem !important;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h5 {
+    font-size: 1em;
+  }
+  h6 {
+    font-size: 1em !important;
+  }
+  p {
+    font-size: 11px;
+  }
+  a button {
+    font-size: 0.75em;
+  }
+  button.learn-more {
+    width: 8rem;
+    height: 2.5rem;
+  }
+  .cont {
+    height: 12rem;
+    padding: 1rem;
+  }
+  .contact {
+    width: 75%;
+  }
+  .info > p {
+    gap: 1rem !important;
+  }
+  .hero h1 {
+    font-size: 2.5em !important;
+  }
+  .hero h3 {
+    font-size: 1.5em !important;
+  }
+  .hero p {
+    font-size: 12px !important;
+    width: 22rem;
+  }
+  .btn {
+    padding: 0.5rem 0.2rem;
+  }
+  button .gap-2 {
+    gap: 0.3rem !important;
+  }
+  .plan-title h6 {
+    font-size: 1.2em !important;
+  }
+  .pricing p {
+    font-size: 0.7em;
+  }
+  .btn {
+    font-size: 0.8em;
+  }
+  .hero a {
+    font-size: 0.8em;
+  }
+  .login__body label {
+    margin: 0 !important;
+  }
+  .ball3p1 {
+    top: 47rem;
+    right: 1rem;
+  }
+  .ball1p3 {
+    top: 73rem;
+    left: -5vw;
+    height: 49rem;
+    width: 35rem;
+  }
+  .ball6p1 {
+    top: 170rem;
+    left: -114vw;
+  }
+  .ball3p2 {
+    top: 233rem;
+    left: 0rem;
+  }
+  .ball1p2 {
+    top: 245rem;
+    right: 0rem;
+  }
+  .ball4p2 {
+    left: 0rem;
+    top: 277rem;
+    z-index: -1;
+    width: 100%;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .login__form label,
+  .login__form a,
+  .signup__form label,
+  .signup__form a {
+    font-size: 0.75rem;
+  }
+  .hero h3 {
+    font-size: 1em !important;
+  }
+  .hero h1 {
+    font-size: 2em !important;
+    margin-block: 0;
+  }
+  .btn {
+    padding: 0.4rem 0;
+  }
+  .hero p {
+    font-size: 10px !important;
+    width: 17rem;
+  }
+  img.icon1,
+  img.icon2 {
+    width: 0.75rem;
+  }
+  h6 {
+    font-size: 0.8em !important;
+  }
+  .navbar-toggler-icon {
+    width: 1em;
+    height: 1em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  .sponsors-logo img {
+    width: 2rem;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 10px;
+  }
+  a button {
+    font-size: 0.7em;
+  }
+  .contact-info {
+    padding: 2rem !important;
+  }
+  input {
+    height: 2rem;
+    font-size: 0.8em !important;
+  }
+  textarea {
+    font-size: 0.8em !important;
+  }
+  .ball6p1 {
+    top: 162rem;
+    left: -163vw;
+  }
+  .ball4p2 {
+    display: none;
+  }
+  .ball3p2 {
+    top: 232rem;
+    left: -7rem;
+  }
+  .ball1p2 {
+    top: 250rem;
+    right: -5rem;
+  }
+  .contact-form {
+    margin-block: 5rem;
+  }
+  .ball2p1 {
+    top: 26rem;
+    left: 1rem;
+  }
+  .ball3p1 {
+    top: 43rem;
+    right: 1rem;
+  }
+  .ball2p2 {
+    top: 56rem;
+    left: 8rem;
+  }
+}
+
 /*----------------------------------------------------------------------- LOGIN PAGE -----------------------------------------------------------------------*/
 
-input.keep {
-  height: 1rem;
+.login__body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--main-font);
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
-.form {
-  width: 25rem;
+.login__body main {
+  gap: 1rem;
+  width: 50vw;
+  max-width: 30rem;
+}
+.login__form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 1.5rem;
+}
+.form-check label,
+.form-check input {
+  cursor: pointer;
 }
 
-.container {
-  border-bottom: black solid 1px;
-  background-color: rgba(216, 189, 189, 0.273);
-  border-radius: 18px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(25px);
-  width: 70vw;
-  padding: 3rem;
-  position: relative;
-  top: 23vh;
-  margin: auto;
+.login__body input,
+.form-check {
+  margin-bottom: 1rem;
+}
+.login__form form > label {
+  margin-inline: 0.5rem;
+}
+.links a,
+.login__form label {
+  color: white;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+/*----------------------------------------------------------------------- SIGNUP PAGE -----------------------------------------------------------------------*/
+
+.signup__body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--main-font);
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.signup__body main {
+  gap: 1rem;
+  width: 50vw;
+  max-width: 30rem;
+}
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 1rem;
+}
+.signup__body input {
+  margin-bottom: 0.5rem;
+}
+.signup__form form > label {
+  margin-inline: 0.5rem;
+}
+.signup__form label {
+  color: white;
 }
