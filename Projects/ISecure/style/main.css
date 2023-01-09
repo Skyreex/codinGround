@@ -295,13 +295,20 @@ a button#signup {
   background: rgba(255, 255, 255, 0.83);
   border: 2px solid #0790d4;
 }
+.type4 {
+  color: #d54b3d;
+  background: rgba(255, 255, 255, 0.83);
+  border: 2px solid #d54b3d;
+}
+
 .type1:hover {
   transform: scale(1.02);
   font-weight: 700;
   background: rgba(255, 255, 255, 0.25);
 }
 .type2:hover,
-.type3:hover {
+.type3:hover,
+.type4:hover {
   transform: scale(1.02);
   font-weight: 700;
 }
@@ -450,8 +457,8 @@ a:hover {
 
 /* -------------------- CONTACT -------------------- */
 .contact {
-  margin: 8rem auto;
-  /* padding-block: 3rem; */
+  margin: 3rem auto;
+  padding-block: 5rem;
 }
 .contact-form {
   max-width: 26rem;
@@ -459,7 +466,7 @@ a:hover {
 input {
   height: 2.5rem;
   font-family: var(--main-font);
-  border: none;
+  /* border: none; */
   border-radius: 4px;
 }
 input:focus {
@@ -499,6 +506,9 @@ footer li a > img {
 /* -------------------- MEDIA -------------------- */
 
 @media screen and (max-width: 850px) {
+  .contact {
+    padding-block: 2rem;
+  }
   .content-grid {
     display: flex;
     flex-wrap: wrap;
@@ -519,21 +529,21 @@ footer li a > img {
   .hero-img {
     display: none;
   }
-  .ball1p2 {
-    top: 220rem;
-    right: 9rem;
+  .login__form,
+  .signup__form {
+    width: 100% !important;
   }
-  .ball6p1 {
-    top: 187rem;
-    left: -33vw;
+  .ball1p1 {
+    top: -3rem;
+    right: -16rem;
+  }
+  .ball1p2 {
+    top: 270rem;
+    right: 11rem;
   }
   .ball1p3 {
-    top: 104rem;
-    left: 18vw;
-  }
-  .ball1p2 {
-    top: 257rem;
-    right: 11rem;
+    top: 109rem;
+    left: 6vw;
   }
   .ball3p2 {
     top: 214rem;
@@ -541,23 +551,27 @@ footer li a > img {
     z-index: -2;
   }
   .ball4p2 {
-    top: 294rem;
+    top: 325rem;
     left: -1rem;
     z-index: -1;
     width: 100%;
     height: 8rem;
   }
-  .ball1p1 {
-    top: -3rem;
-    right: -16rem;
-  }
   .ball5p1 {
     top: 9rem;
     left: -7rem;
   }
-  .login__form,
-  .signup__form {
-    width: 100% !important;
+  .ball6p1 {
+    top: 196rem;
+    left: -33vw;
+    border-radius: 218px;
+    height: 53rem;
+    width: 73rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .login__form {
+    margin: 2rem 1rem !important;
   }
 }
 @media screen and (max-width: 500px) {
@@ -703,15 +717,13 @@ footer li a > img {
     width: 80vw !important;
   }
 }
-@media screen and (max-width: 600px) {
-  .login__form {
-    margin: 2rem 1rem !important;
-  }
-}
 @media screen and (max-width: 450px) {
   .login__form,
   .signup__form {
     margin: 2rem 0.5rem !important;
+  }
+  .gmail {
+    font-size: 0.8em;
   }
 
   .login__body main,
@@ -815,6 +827,9 @@ footer li a > img {
     z-index: -1;
     width: 100%;
     height: 6rem;
+  }
+  .or {
+    font-size: 1.2em !important;
   }
 }
 @media screen and (max-width: 380px) {
