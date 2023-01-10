@@ -22,6 +22,7 @@
 }
 
 /*    RESET    */
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -92,16 +93,22 @@ p {
 .blur-s {
   filter: blur(40px);
 }
-
 .circle {
   height: 50px;
   width: 50px;
   background: var(--primary-color);
 }
-
 .themed-txt {
   background: url(../data/blurry-gradient-haikei.svg);
   color: transparent;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+}
+.themed-txt2 {
+  background: url(../data/blurry-gradient-haikei.svg);
+  color: transparent;
+  background-size: 2em;
   background-clip: text;
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -130,10 +137,8 @@ p {
 /*-------------------- Percs --------------------*/
 
 .percs {
-  /* overflow-inline: clip; */
   overflow-x: clip;
 }
-
 .ballL {
   width: 30rem;
   height: 30rem;
@@ -183,16 +188,13 @@ p {
   top: -1rem;
   right: -10rem;
 }
-.ball1p2 {
-  top: 220rem;
-  right: 5rem;
-}
 .ball1p3 {
   top: 104rem;
   left: 23vw;
   border-radius: 218px;
   height: 60rem;
   width: 35rem;
+  opacity: 0.7;
 }
 .ball2p1 {
   top: 45rem;
@@ -200,11 +202,6 @@ p {
 }
 .ball2p2 {
   top: 70rem;
-  left: 8rem;
-  z-index: -2;
-}
-.ball3p2 {
-  top: 220rem;
   left: 8rem;
   z-index: -2;
 }
@@ -216,21 +213,24 @@ p {
   top: 81rem;
   right: 5rem;
 }
-.ball4p2 {
-  top: 219rem;
-  left: 5rem;
-  z-index: -1;
-}
 .ball5p1 {
   top: 8rem;
   left: -5rem;
 }
 .ball6p1 {
-  top: 187rem;
-  left: 4vw;
   border-radius: 218px;
   height: 17rem;
+  opacity: 0.7;
   width: 73rem;
+}
+.contact-ball {
+  width: 70rem;
+  height: 15rem;
+}
+.testimonials-ball {
+  width: 85rem;
+  height: 8rem;
+  opacity: 0.7;
 }
 
 /*-------------------- Header --------------------*/
@@ -303,7 +303,6 @@ a button#signup {
   background: rgba(255, 255, 255, 0.83);
   border: 2px solid #d54b3d;
 }
-
 .type1:hover {
   transform: scale(1.02);
   font-weight: 700;
@@ -426,6 +425,7 @@ button.learn-more:hover {
 }
 
 /* -------------------- PRICING -------------------- */
+
 .pricing p {
   font-size: 0.85em;
 }
@@ -458,7 +458,30 @@ a:hover {
   margin-top: 0.5rem;
 }
 
+/* -------------------- TESTIMONIALS -------------------- */
+
+.quote {
+  filter: invert(57%) sepia(23%) saturate(5043%) hue-rotate(134deg)
+    brightness(100%) contrast(83%);
+  width: 5rem;
+  right: -31px;
+  position: absolute;
+  top: -35px;
+}
+.star {
+  filter: invert(57%) sepia(23%) saturate(5043%) hue-rotate(319deg)
+    brightness(100%) contrast(83%);
+  width: 8rem;
+}
+
+.testimonial {
+  padding: 2rem;
+  width: 20rem;
+  min-height: 15rem;
+}
+
 /* -------------------- CONTACT -------------------- */
+
 .contact {
   margin: 3rem auto;
   padding-block: 5rem;
@@ -469,7 +492,6 @@ a:hover {
 input {
   height: 2.5rem;
   font-family: var(--main-font);
-  /* border: none; */
   border-radius: 4px;
 }
 input:focus {
@@ -506,8 +528,23 @@ footer li a > img {
   width: 2.2rem;
 }
 
-/* -------------------- MEDIA -------------------- */
+/*----------------------------------------------------------------------- Break points -----------------------------------------------------------------------*/
 
+@media screen and (max-width: 1158px) {
+  .ball6p1 {
+    height: 46rem;
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 1074px) {
+  .testimonial-main {
+    order: 3;
+  }
+  .testimonials-ball {
+    width: 43rem;
+    height: 31rem;
+  }
+}
 @media screen and (max-width: 974px) {
   .about-title {
     border-right: none !important;
@@ -525,6 +562,10 @@ footer li a > img {
   }
 }
 @media screen and (max-width: 850px) {
+  .contact-ball {
+    width: 30rem;
+    height: 45rem;
+  }
   .contact {
     padding-block: 2rem;
   }
@@ -556,36 +597,26 @@ footer li a > img {
     top: -3rem;
     right: -16rem;
   }
-  .ball1p2 {
-    top: 270rem;
-    right: 11rem;
-  }
   .ball1p3 {
     top: 109rem;
     left: 6vw;
   }
-  .ball3p2 {
-    top: 214rem;
-    left: 19vw;
-    z-index: -2;
-  }
-  .ball4p2 {
-    top: 325rem;
-    left: -1rem;
-    z-index: -1;
-    width: 100%;
-    height: 8rem;
-  }
+
   .ball5p1 {
     top: 9rem;
     left: -7rem;
   }
+}
+@media screen and (max-width: 800px) {
   .ball6p1 {
-    top: 196rem;
-    left: -33vw;
-    border-radius: 218px;
-    height: 53rem;
-    width: 73rem;
+    height: 85rem;
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 707px) {
+  .testimonials-ball {
+    width: 31rem;
+    height: 56rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -598,6 +629,11 @@ footer li a > img {
   }
 }
 @media screen and (max-width: 500px) {
+  .testimonial {
+    min-height: 12rem !important;
+    width: 18rem !important;
+  }
+
   .about-head {
     font-size: 3.2em !important;
   }
@@ -684,17 +720,9 @@ footer li a > img {
     top: 81rem;
     right: 10rem;
   }
-  .ball3p2 {
-    top: 248rem;
-    left: 0rem;
-  }
-  .ball6p1 {
-    top: 185rem;
-    left: -94vw;
-    border-radius: 218px;
-    height: 21rem;
-    width: 90rem;
-    rotate: 90deg;
+  .testimonials-ball {
+    width: 20rem;
+    height: 53rem;
   }
   .ball1p3 {
     top: 75rem;
@@ -706,17 +734,6 @@ footer li a > img {
   .ball3p1 {
     top: 49rem;
     right: 1rem;
-  }
-  .ball1p2 {
-    top: 263rem;
-    right: 0rem;
-  }
-  .ball4p2 {
-    top: 293rem;
-    left: -1rem;
-    z-index: -1;
-    width: 100%;
-    height: 4rem;
   }
   .login__form label {
     font-size: 0.9em;
@@ -840,25 +857,6 @@ footer li a > img {
     height: 49rem;
     width: 35rem;
   }
-  .ball6p1 {
-    top: 170rem;
-    left: -114vw;
-  }
-  .ball3p2 {
-    top: 233rem;
-    left: 0rem;
-  }
-  .ball1p2 {
-    top: 245rem;
-    right: 0rem;
-  }
-  .ball4p2 {
-    left: 0rem;
-    top: 277rem;
-    z-index: -1;
-    width: 100%;
-    height: 6rem;
-  }
   .or {
     font-size: 1.2em !important;
   }
@@ -920,21 +918,7 @@ footer li a > img {
   textarea {
     font-size: 0.8em !important;
   }
-  .ball6p1 {
-    top: 162rem;
-    left: -163vw;
-  }
-  .ball4p2 {
-    display: none;
-  }
-  .ball3p2 {
-    top: 232rem;
-    left: -7rem;
-  }
-  .ball1p2 {
-    top: 250rem;
-    right: -5rem;
-  }
+
   .contact-form {
     margin-block: 5rem;
   }
@@ -1025,7 +1009,8 @@ footer li a > img {
   color: white;
 }
 
-/*----------------------------------------------------------------------- SIGNUP PAGE -----------------------------------------------------------------------*/
+/*----------------------------------------------------------------------- ABOUT PAGE -----------------------------------------------------------------------*/
+
 .about-container {
   margin-block: 7rem;
 }
