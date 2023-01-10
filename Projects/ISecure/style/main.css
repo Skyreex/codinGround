@@ -114,6 +114,9 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
+.text-shadow {
+  text-shadow: var(--shadow);
+}
 
 .main-ft {
   font-family: var(--main-font);
@@ -505,6 +508,22 @@ footer li a > img {
 
 /* -------------------- MEDIA -------------------- */
 
+@media screen and (max-width: 974px) {
+  .about-title {
+    border-right: none !important;
+    height: 7rem !important;
+  }
+  .about-logo {
+    font-size: 2.5rem !important;
+  }
+  .about-title h3 {
+    font-size: 1rem !important;
+  }
+  .about {
+    padding: 2rem 4rem !important;
+    gap: 3rem;
+  }
+}
 @media screen and (max-width: 850px) {
   .contact {
     padding-block: 2rem;
@@ -573,8 +592,15 @@ footer li a > img {
   .login__form {
     margin: 2rem 1rem !important;
   }
+  .about {
+    padding: 2rem !important;
+    gap: 4rem !important;
+  }
 }
 @media screen and (max-width: 500px) {
+  .about-head {
+    font-size: 3.2em !important;
+  }
   .ball3p1 {
     top: 52rem;
   }
@@ -718,6 +744,11 @@ footer li a > img {
   }
 }
 @media screen and (max-width: 450px) {
+  .about {
+    padding: 1rem !important;
+    gap: 1rem !important;
+  }
+
   .login__form,
   .signup__form {
     margin: 2rem 0.5rem !important;
@@ -992,4 +1023,51 @@ footer li a > img {
 }
 .signup__form label {
   color: white;
+}
+
+/*----------------------------------------------------------------------- SIGNUP PAGE -----------------------------------------------------------------------*/
+.about-container {
+  margin-block: 7rem;
+}
+.about {
+  padding: 4rem;
+  gap: 3rem;
+}
+.about-para {
+  max-width: 32rem;
+}
+.about-title {
+  border-right: white solid 3px;
+  padding-right: 2rem;
+  height: 23rem;
+}
+.about-logo {
+  font-size: 3.75em;
+  background-size: 2em;
+}
+.about-head {
+  font-size: 3.75em;
+}
+.member img {
+  width: 150px;
+}
+.member .name {
+  color: white;
+  top: -65px;
+}
+.member .occupation {
+  top: -80px;
+  font-size: 0.8em;
+}
+.ball3p1a {
+  top: 42rem;
+  z-index: -5;
+}
+.ball2p2a {
+  top: 47rem;
+  z-index: -5;
+}
+.ball4p1a {
+  top: 63rem;
+  z-index: -5;
 }
