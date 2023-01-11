@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      CodePen - CSS filter generator to convert from black to target hex color
+    </title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <table>
+      <tr valign="top">
+        <td width="50%">
+          <fieldset>
+            <p>
+              <label>Target color</label>
+              <input
+                class="target"
+                type="text"
+                placeholder="target hex"
+                value="#00a4d6"
+              />
+            </p>
+            <button class="execute">Compute Filters</button>
+          </fieldset>
+          <p>
+            Real pixel, color applied through CSS <code>background-color</code>:
+          </p>
+          <div class="pixel realPixel"></div>
+
+          <p>Filtered pixel, color applied through CSS <code>filter</code>:</p>
+          <div class="pixel filterPixel"></div>
+
+          <p class="filterDetail"></p>
+          <p class="lossDetail"></p>
+        </td>
+      </tr>
+    </table>
+    <!-- partial -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

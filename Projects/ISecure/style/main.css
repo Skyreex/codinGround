@@ -473,6 +473,9 @@ a:hover {
     brightness(100%) contrast(83%);
   width: 8rem;
 }
+.testimonials {
+  margin-block: 7rem;
+}
 
 .testimonial {
   padding: 2rem;
